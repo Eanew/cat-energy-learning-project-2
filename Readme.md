@@ -1,7 +1,7 @@
-# Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
+﻿# Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Александр Петров](https://up.htmlacademy.ru/adaptive/18/user/345769).
-* Наставник: `Неизвестно`.
+* Наставник: [Антон Игнатенко](https://htmlacademy.ru/profile/id987931).
 
 ---
 
