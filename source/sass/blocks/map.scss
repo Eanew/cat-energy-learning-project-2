@@ -1,0 +1,7 @@
+.map {
+  padding-bottom: 125%;
+  background-image: url("../img/map-pin.png"), url("../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 55px auto, cover;
+  background-position: center bottom calc(19px + 42.5%), center;
+}

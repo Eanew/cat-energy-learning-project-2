@@ -1,0 +1,40 @@
+.intro__wrapper {
+  position: relative;
+  order: 5;
+  padding: 29px 20px 2px;
+  min-height: 480px;
+  background-image: url("../img/index-can-mobile@1x.png");
+  background-size: 280px 270px;
+  background-position: bottom 43px center;
+  background-repeat: no-repeat;
+}
+
+.intro__heading {
+  width: 250px;
+  margin: 0 auto;
+  font-size: 36px;
+  line-height: 1;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+}
+
+.intro__text {
+  margin-top: 19px;
+  font-size: 14px;
+  line-height: 1;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.intro__button {
+  @include button-green;
+
+  display: inline-block;
+  vertical-align: center;
+  width: 100%;
+  margin-top: 293px;
+  font-size: 14px;
+  line-height: 1.29;
+}

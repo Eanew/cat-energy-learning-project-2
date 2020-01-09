@@ -1,0 +1,45 @@
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+       url("../fonts/oswaldregular.woff2") format("woff2"),
+       url("../fonts/oswaldregular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  src: local(""),
+       url("../fonts/oswaldmedium.woff2") format("woff2"),
+       url("../fonts/oswaldmedium.woff") format("woff");
+}
+
+@import "mixins.scss",
+        "variables.scss",
+        "blocks/page.scss",
+        "blocks/page-header.scss",
+        "blocks/logo.scss",
+        "blocks/main-nav.scss",
+        "blocks/burger.scss",
+        "blocks/intro.scss",
+        "blocks/button.scss",
+        "blocks/diet.scss",
+        "blocks/how-it-works.scss",
+        "blocks/example.scss",
+        "blocks/slider.scss",
+        "blocks/page-footer.scss",
+        "blocks/map.scss",
+        "blocks/contacts.scss",
+        "blocks/social-list.scss",
+        "blocks/copyright.scss",
+        "blocks/catalog-heading.scss",
+        "blocks/goods.scss",
+        "blocks/cat-food.scss",
+        "blocks/show-all.scss",
+        "blocks/extra.scss",
+        "blocks/program-heading.scss",
+        "blocks/program-direction.scss",
+        "blocks/program-selection.scss",
+        "blocks/form.scss";

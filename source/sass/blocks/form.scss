@@ -1,0 +1,247 @@
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.form__fieldset {
+  flex: 1 1 1200px;
+  padding: 0 6.25%;
+  border: none;
+}
+
+.form__fieldset--parameters {
+  flex: 1 0 280px;
+  padding-bottom: 23px;
+}
+
+.form__field-text {
+  position: relative;
+  display: flex;
+  align-items: baseline;
+
+  &:not(:first-child) {
+    margin-top: 14px;
+  }
+}
+
+.form__label-text {
+  @include label;
+}
+
+.form__input-text {
+  @include input;
+}
+
+.form__field-number {
+  display: flex;
+  align-items: baseline;
+  margin-top: 14px;
+}
+
+.form__label-number {
+  @include label;
+}
+
+.form__input-number {
+  @include input;
+}
+
+.form__fieldset--diet {
+  flex: 1 0 280px;
+  border-top: $border-ed;
+  border-bottom: $border-ed;
+  padding-top: 21px;
+  padding-bottom: 8px;
+  padding-right: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form__field-radio {
+  position: relative;
+  padding: 3px 0;
+  width: 100%;
+  margin-bottom: 13px;
+}
+
+.form__input-radio {
+  cursor: pointer;
+  margin-right: 23px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 30px;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    border: $border-cd;
+    border-radius: 50%;
+  }
+
+  &:focus::before {
+    outline: 2px solid #70c0d8;
+  }
+
+  &:checked::after {
+    position: absolute;
+    content: "";
+    width: 12px;
+    height: 12px;
+    top: 9px;
+    left: 9px;
+    border-radius: 50%;
+    background-color: $leaf;
+  }
+}
+
+.form__label-radio {
+  font-size: 16px;
+  line-height: 1.13;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.form__legend {
+  width: 100%;
+  margin: 0;
+  padding: 28px 0;
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 400;
+
+  &--contacts {
+    padding-right: calc(100% - 200px);
+  }
+}
+
+.form__fieldset--contacts {
+  position: relative;
+
+  @include right-line(42px, 200px);
+}
+
+.form__mail-icon,
+.form__phone-icon {
+  position: absolute;
+  cursor: pointer;
+  right: 8.57%;
+  top: 50%;
+  transform: translate(50%, -50%);
+  fill: #222222;
+}
+
+.form__input-text:invalid + .form__mail-icon,
+.form__input-text:invalid + .form__phone-icon {
+  // fill: #ff8282;
+}
+
+.form__input-text:focus + .form__mail-icon,
+.form__input-text:focus + .form__phone-icon {
+  fill: $leaf;
+}
+
+.form__fieldset--comment {
+  position: relative;
+
+  @include right-line(42px, 139px);
+}
+
+.form__comment-label {
+
+}
+
+.form__textarea {
+  width: 100%;
+  font-family: $oswald;
+  font-size: 16px;
+  line-height: 1.13;
+  color: #444444;
+  text-transform: uppercase;
+  border: $border-cd;
+  padding: 15px;
+  resize: none;
+}
+
+.form__fieldset--extra {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-bottom: 22px;
+
+  @include right-line(42px, 161px);
+}
+
+.form__field-checkbox {
+  width: 200px;
+  position: relative;
+  padding: 3px 0;
+  margin-bottom: 13px;
+}
+
+.form__input-checkbox {
+  cursor: pointer;
+  margin-right: 23px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 30px;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    border: $border-cd;
+  }
+
+  &:focus::before {
+    outline: 2px solid #70c0d8;
+  }
+
+  &:checked::after {
+    position: absolute;
+    content: "";
+    width: 22px;
+    height: 17px;
+    bottom: 7px;
+    left: 5px;
+    background-image: url("../img/icon-tick.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.form__label-checkbox {
+  font-size: 16px;
+  line-height: 1.13;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.form__button {
+  flex: 1 0 280px;
+  margin-left: 6.25%;
+  margin-right: 6.25%;
+  margin-bottom: 22px;
+  border: none;
+  font-family: $oswald;
+
+  @include button-green;
+}
+
+.form__footnote {
+  flex: 1 0 280px;
+  margin-left: 6.25%;
+  margin-right: 6.25%;
+  margin-bottom: 22px;
+  align-self: center;
+  font-family: $arial;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  color: #444444;
+}

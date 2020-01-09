@@ -1,0 +1,64 @@
+.how-it-works__wrapper {
+  padding: 0 20px 42px;
+}
+
+.how-it-works__heading {
+  margin: 0;
+  font-size: 36px;
+  line-height: 1.67;
+  font-weight: 400;
+}
+
+.how-it-works__list {
+  @include list;
+}
+
+.how-it-works__item {
+  position: relative;
+  margin-top: 20px;
+  min-height: 60px;
+  padding-left: 80px;
+  padding-top: 5px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-color: $leaf;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.how-it-works__item--only-good::after {
+  background-image: url("../img/advantage-leaf@1x.png");
+}
+
+.how-it-works__item--fast-cooking::after {
+  background-image: url("../img/advantage-powder@1x.png");
+}
+
+.how-it-works__item--ration-change::after {
+  background-image: url("../img/advantage-dining@1x.png");
+}
+
+.how-it-works__item--profit::after {
+  background-image: url("../img/advantage-clock@1x.png");
+}
+
+.how-it-works__text {
+  @include paragraph;
+  margin: 0;
+}

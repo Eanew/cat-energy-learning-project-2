@@ -1,0 +1,120 @@
+.extra {
+
+}
+
+.extra__heading {
+  position: relative;
+  border-top: $border-ed;
+  padding: 28px 6.25%;
+  margin: 0;
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 400;
+
+  @include right-line(42px, 248px);
+}
+
+.extra__wrapper {
+  padding: 0 20px 35px;
+}
+
+.extra__goods {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border-bottom: $border-ed;
+}
+
+.extra__tbody {
+}
+
+.extra__product {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 17px;
+  border-top: 1px solid #ededed;
+}
+
+.extra__label {
+  width: 100%;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: left;
+  color: #222222;
+  margin: 14px 0;
+}
+
+.extra__size,
+.extra__price {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 1;
+  color: #444444;
+}
+
+.extra__price {
+
+}
+
+.extra__button-container {
+  margin-top: 14px;
+  width: 100%;
+}
+
+.extra__button {
+  display: inline-block;
+  vertical-align: center;
+  width: 100%;
+
+  @include button-green;
+}
+
+// .extra__bonus { //резина по ширине и высоте
+//   position: relative;
+//   width: 100%;
+//   padding-bottom: calc(289 / 280 * 100%);
+//   margin: 39px auto 0;
+//   background-image: url("../img/icon-gift.svg"), url("../img/gift-photo-mobile@1x.jpg");
+//   background-repeat: no-repeat, no-repeat;
+//   background-size: 20% auto, cover;
+//   background-position: top 27% center, center;
+// }
+
+// .extra__text {
+//   position: absolute;
+//   width: 60%;
+//   left: 50%;
+//   top: 67.86%;
+//   transform: translateX(-50%);
+//   font-family: "Arial", sans-serif;
+//   font-size: 16px;
+//   line-height: 1.25;
+//   color: #ffffff;
+//   text-align: center;
+// background-color: #6eb147;
+// }
+
+.extra__bonus {
+  width: 100%;
+  min-height: 289px;
+  padding-top: 190px;
+  margin: 39px auto 0;
+  background-image: url("../img/icon-gift.svg"), url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 56px auto, cover;
+  background-position: top 65px center, bottom 25% center;
+  background-color: #6eb147;
+}
+
+.extra__text {
+  width: 170px;
+  margin: 0 auto;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #ffffff;
+  text-align: center;
+}

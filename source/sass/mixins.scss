@@ -1,0 +1,79 @@
+@import "variables.scss";
+
+@mixin visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@mixin paragraph {
+  font-family: $arial;
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: left;
+  color: #444444;
+}
+
+@mixin list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin label {
+  flex-shrink: 0;
+  margin-right: 16px;
+  font-size: 16px;
+  line-height: 1.13;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+@mixin input {
+  flex: 1 1 280px;
+  padding: 12px 16px;
+  border: $border-cd;
+  font-family: $oswald;
+  font-size: 16px;
+  line-height: 1.13;
+  text-transform: uppercase;
+  color: #444444;
+}
+
+@mixin right-line($top: 42px, $heading-width: 200px) {
+  &::after {
+    position: absolute;
+    content: "";
+    top: $top;
+    right: 0;
+    width: calc(100% - (6.25% + #{$heading-width}));
+    height: 3px;
+    background-color: $leaf;
+  }
+}
+
+@mixin button-green {
+  padding: 10px 0;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: $leaf;
+
+  &:focus,
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
