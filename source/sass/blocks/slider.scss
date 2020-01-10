@@ -13,7 +13,7 @@
   border: none;
   background: none;
   cursor: pointer;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $oswald;
   font-size: 16px;
   line-height: 1.25;
   text-transform: uppercase;
@@ -25,7 +25,7 @@
   margin: 0 18px;
   padding: 4px 6px;
   border-radius: 6px;
-  border: 1px solid 1px #cdcdcd;
+  border: $border-cd;
   background-color: #ffffff;
 }
 

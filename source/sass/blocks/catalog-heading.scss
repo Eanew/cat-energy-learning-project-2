@@ -1,8 +1,8 @@
 .catalog-heading {
   margin: 0;
-  padding: 21px calc(22 / 320 * 100%) 36px;
+  padding: 21px 22px 36px;
   font-size: 36px;
   line-height: 1.67;
   font-weight: 400;
-  border-top: 1px solid #ededed;
+  border-top: $border-ed;
 }

@@ -5,17 +5,25 @@
 .extra__heading {
   position: relative;
   border-top: $border-ed;
-  padding: 28px 6.25%;
+  padding-top: 28px;
+  padding-bottom: 28px;
   margin: 0;
   font-size: 24px;
   line-height: 1;
   font-weight: 400;
 
-  @include right-line(42px, 248px);
+  @include wrapper;
+  @include right-line(42px, 268px);
+
+  &::after {
+    right: 0;
+  }
 }
 
 .extra__wrapper {
-  padding: 0 20px 35px;
+  @include wrapper;
+  padding-top: 0;
+  padding-bottom: 35px;
 }
 
 .extra__goods {
@@ -26,6 +34,7 @@
 }
 
 .extra__tbody {
+
 }
 
 .extra__product {
@@ -33,7 +42,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
   padding-bottom: 17px;
-  border-top: 1px solid #ededed;
+  border-top: $border-ed;
 }
 
 .extra__label {
@@ -49,14 +58,10 @@
 
 .extra__size,
 .extra__price {
-  font-family: "Arial", sans-serif;
+  font-family: $arial;
   font-size: 14px;
   line-height: 1;
   color: #444444;
-}
-
-.extra__price {
-
 }
 
 .extra__button-container {
@@ -71,31 +76,6 @@
 
   @include button-green;
 }
-
-// .extra__bonus { //резина по ширине и высоте
-//   position: relative;
-//   width: 100%;
-//   padding-bottom: calc(289 / 280 * 100%);
-//   margin: 39px auto 0;
-//   background-image: url("../img/icon-gift.svg"), url("../img/gift-photo-mobile@1x.jpg");
-//   background-repeat: no-repeat, no-repeat;
-//   background-size: 20% auto, cover;
-//   background-position: top 27% center, center;
-// }
-
-// .extra__text {
-//   position: absolute;
-//   width: 60%;
-//   left: 50%;
-//   top: 67.86%;
-//   transform: translateX(-50%);
-//   font-family: "Arial", sans-serif;
-//   font-size: 16px;
-//   line-height: 1.25;
-//   color: #ffffff;
-//   text-align: center;
-// background-color: #6eb147;
-// }
 
 .extra__bonus {
   width: 100%;
@@ -112,7 +92,7 @@
 .extra__text {
   width: 170px;
   margin: 0 auto;
-  font-family: "Arial", sans-serif;
+  font-family: $arial;
   font-size: 16px;
   line-height: 1.25;
   color: #ffffff;

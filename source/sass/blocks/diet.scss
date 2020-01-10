@@ -5,7 +5,10 @@
 .diet__list {
   list-style: none;
   margin: 0;
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  @include wrapper;
 }
 
 .diet__item {
@@ -61,7 +64,6 @@
 
 .diet__description {
   @include paragraph;
-  // min-height: 109px;
   padding-bottom: 24px;
   margin: 35px 0 20px;
   border-bottom: 1px solid rgba(#111111, 0.1);
@@ -81,8 +83,9 @@
   &::after {
     position: absolute;
     content: "";
-    bottom: 2px;
     right: 0;
+    top: 50%;
+    transform: translateY(-50%);
     width: 28px;
     height: 12px;
     background-image: url("../img/icon-right-arrow-long.svg");

@@ -52,8 +52,8 @@
     position: absolute;
     content: "";
     top: $top;
-    right: 0;
-    width: calc(100% - (6.25% + #{$heading-width}));
+    right: -20px;
+    width: calc(100% - #{$heading-width});
     height: 3px;
     background-color: $leaf;
   }
@@ -76,4 +76,10 @@
   &:active {
     color: rgba(255, 255, 255, 0.3);
   }
+}
+
+@mixin wrapper($padding: 20px, $max-width: 1280px) {
+  padding-left: $padding;
+  padding-right: $padding;
+  max-width: $max-width;
 }

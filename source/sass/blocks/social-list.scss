@@ -1,7 +1,7 @@
 .social-list {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   list-style: none;
   margin: 0;
   padding: 22px 0;
@@ -10,15 +10,21 @@
 }
 
 .social-list__item {
-  margin: 0 3px;
-  width: 30px;
-  height: 30px;
   display: flex;
   align-items: center;
-  justify-content: center;
 
-  &:first-child {
+  &:last-child {
     margin-right: 8px;
+  }
+}
+
+.social-list__item--instagram {
+  margin-left: 36px;
+  margin-right: 40px;
+
+  &-big {
+    margin-left: 34px;
+    margin-right: 36px;
   }
 }
 
@@ -37,16 +43,4 @@
   &:active {
     opacity: 0.3;
   }
-}
-
-.social-list__icon-vk {
-
-}
-
-.social-list__icon-instagram {
-
-}
-
-.social-list__icon-fb {
-
 }

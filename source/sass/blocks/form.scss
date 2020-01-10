@@ -5,8 +5,12 @@
 }
 
 .form__fieldset {
-  flex: 1 1 1200px;
-  padding: 0 6.25%;
+  @include wrapper;
+  flex: 1 0 100%;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
   border: none;
 }
 
@@ -111,13 +115,10 @@
   font-size: 24px;
   line-height: 1;
   font-weight: 400;
-
-  &--contacts {
-    padding-right: calc(100% - 200px);
-  }
 }
 
-.form__fieldset--contacts {
+.form__fieldset--contacts .form__legend {
+  padding-right: calc(100% - 260px);
   position: relative;
 
   @include right-line(42px, 200px);
@@ -143,10 +144,10 @@
   fill: $leaf;
 }
 
-.form__fieldset--comment {
+.form__fieldset--comment .form__legend {
   position: relative;
 
-  @include right-line(42px, 139px);
+  @include right-line(42px, 142px);
 }
 
 .form__comment-label {
@@ -166,18 +167,20 @@
 }
 
 .form__fieldset--extra {
-  position: relative;
+  padding-bottom: 22px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: baseline;
-  padding-bottom: 22px;
+}
+
+.form__fieldset--extra .form__legend {
+  position: relative;
 
   @include right-line(42px, 161px);
 }
 
 .form__field-checkbox {
-  width: 200px;
+  flex: 0 0 250px;
   position: relative;
   padding: 3px 0;
   margin-bottom: 13px;
@@ -224,8 +227,8 @@
 
 .form__button {
   flex: 1 0 280px;
-  margin-left: 6.25%;
-  margin-right: 6.25%;
+  margin-left: 20px;
+  margin-right: 20px;
   margin-bottom: 22px;
   border: none;
   font-family: $oswald;
@@ -235,8 +238,8 @@
 
 .form__footnote {
   flex: 1 0 280px;
-  margin-left: 6.25%;
-  margin-right: 6.25%;
+  margin-left: 20px;
+  margin-right: 20px;
   margin-bottom: 22px;
   align-self: center;
   font-family: $arial;

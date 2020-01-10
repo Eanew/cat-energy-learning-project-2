@@ -3,8 +3,7 @@
   width: 100%;
   top: 0;
   left: 0;
-  padding: 0 20px;
-  min-height: 114px;
+  padding: 18px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -17,7 +16,7 @@
 
 .contacts__address {
   flex: 0 0 140px;
-  font-family: "Arial", sans-serif;
+  font-family: $arial;
   font-size: 14px;
   line-height: 1.43;
   color: #444444;

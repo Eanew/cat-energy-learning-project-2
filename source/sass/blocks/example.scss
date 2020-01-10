@@ -3,7 +3,10 @@
 }
 
 .example__wrapper {
-  padding: 30px 20px 38px;
+  padding-top: 30px;
+  padding-bottom: 38px;
+
+  @include wrapper;
 }
 
 .example__heading {
@@ -20,7 +23,9 @@
 
 .example__table {
   margin-top: 30px;
-  width: 100%;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .example__tbody {
@@ -32,13 +37,13 @@
   position: relative;
   flex: 0 0 124px;
   min-height: 56px;
-  border: 1px solid #cdcdcd;
+  border: $border-cd;
   border-radius: 3px;
   display: flex;
   justify-content: center;
   align-items: center;
 
-  &:last-child {
+  &:not(:first-child) {
     margin-left: 32px;
   }
 }
@@ -51,7 +56,7 @@
   width: 87px;
   padding: 0 3px;
   background-color: #f2f2f2;
-  font-family: "Arial", sans-serif;
+  font-family: $arial;
   font-size: 12px;
   line-height: 1;
   text-align: center;
@@ -71,7 +76,3 @@
   text-align: center;
   text-transform: uppercase;
 }
-
-// .example__slider {
-//   margin-top: 350px;
-// }

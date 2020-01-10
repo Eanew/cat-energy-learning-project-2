@@ -1,7 +1,9 @@
 .intro__wrapper {
+  @include wrapper;
   position: relative;
+  padding-top: 29px;
+  padding-bottom: 2px;
   order: 5;
-  padding: 29px 20px 2px;
   min-height: 480px;
   background-image: url("../img/index-can-mobile@1x.png");
   background-size: 280px 270px;
@@ -30,7 +32,6 @@
 
 .intro__button {
   @include button-green;
-
   display: inline-block;
   vertical-align: center;
   width: 100%;
