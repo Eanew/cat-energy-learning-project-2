@@ -1,7 +1,10 @@
-.page {
+body {
   min-width: 290px;
-  font-family: $oswald;
+  font-family: $font-primary;
+  // font-size: 14px;
+  // line-height: 1.29;
   color: #111111;
+  text-align: left;
   margin: 0;
   background-color: #ffffff;
   box-sizing: border-box;

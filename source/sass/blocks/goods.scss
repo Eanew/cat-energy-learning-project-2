@@ -1,5 +1,5 @@
 .goods {
-
+  @include wrapper;
 }
 
 .goods__heading {
@@ -11,7 +11,9 @@
 }
 
 .goods__list {
-  @include list;
+  @include list-reset;
+  margin-left: -20px;
+  margin-right: -20px;
   display: flex;
   flex-wrap: wrap;
 }

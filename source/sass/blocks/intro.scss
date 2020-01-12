@@ -4,16 +4,19 @@
   padding-top: 29px;
   padding-bottom: 2px;
   order: 5;
-  min-height: 480px;
+  height: 482px;
   background-image: url("../img/index-can-mobile@1x.png");
   background-size: 280px 270px;
   background-position: bottom 43px center;
   background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
 }
 
 .intro__heading {
   width: 250px;
-  margin: 0 auto;
+  align-self: center;
+  margin: 0;
   font-size: 36px;
   line-height: 1;
   font-weight: 400;
@@ -31,11 +34,8 @@
 }
 
 .intro__button {
-  @include button-green;
-  display: inline-block;
-  vertical-align: center;
   width: 100%;
-  margin-top: 293px;
+  margin-top: auto;
   font-size: 14px;
   line-height: 1.29;
 }
