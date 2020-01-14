@@ -1,0 +1,18 @@
+.button {
+  padding: 10px 0;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: $color-primary;
+
+  &:focus,
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}

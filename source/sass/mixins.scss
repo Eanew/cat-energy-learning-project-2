@@ -1,0 +1,46 @@
+@mixin visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@mixin paragraph {
+  font-family: $font-secondary;
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: left;
+  color: #444444;
+}
+
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin right-line($top: 42px, $heading-width: 200px) {
+  &::after {
+    position: absolute;
+    content: "";
+    top: $top;
+    right: 0;
+    width: calc(100% - #{$heading-width});
+    height: 3px;
+    background-color: $color-primary;
+  }
+}
+
+@mixin wrapper($padding: 20px, $max-width: 1440px) {
+  padding-left: $padding;
+  padding-right: $padding;
+  max-width: $max-width;
+  margin-left: auto;
+  margin-right: auto;
+}

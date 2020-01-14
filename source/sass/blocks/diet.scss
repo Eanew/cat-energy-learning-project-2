@@ -1,0 +1,106 @@
+.diet__heading {
+  @include visually-hidden;
+}
+
+.diet__list {
+  list-style: none;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  @include wrapper;
+}
+
+.diet__item {
+  position: relative;
+  margin-top: 20px;
+  padding: 30px 20px 22px;
+  background-color: #f2f2f2;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 24px;
+    left: 22px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: $color-primary;
+  }
+}
+
+.diet__item--slim::after {
+  position: absolute;
+  content: "";
+  top: 22px;
+  left: 30px;
+  width: 35px;
+  height: 49px;
+  background-image: url("../img/icon-cat-slim.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.diet__item--pro::after {
+  position: absolute;
+  content: "";
+  top: 35px;
+  left: 13px;
+  width: 67px;
+  height: 28px;
+  background-image: url("../img/icon-cat-pro.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.diet__caption {
+  margin: 0;
+  padding-left: 72px;
+  font-size: 24px;
+  line-height: 1.54;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.diet__description {
+  @include paragraph;
+  padding-bottom: 24px;
+  margin: 35px 0 20px;
+  border-bottom: 1px solid rgba(#111111, 0.1);
+}
+
+.diet__link {
+  position: relative;
+  display: inline-block;
+  vertical-align: center;
+  padding-right: 49px;
+  font-size: 16px;
+  line-height: 1;
+  color: #111111;
+  text-align: left;
+  text-transform: uppercase;
+
+  &::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 34px;
+    height: 12px;
+    background-image: url("../img/icon-right-arrow-long.svg");
+    background-repeat: no-repeat;
+    background-size: 25px 12px;
+    background-position: left 0 center;
+  }
+
+  &:focus::after,
+  &:hover::after {
+    background-image: url("../img/icon-right-arrow-verylong.svg");
+    background-size: 34px 12px;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

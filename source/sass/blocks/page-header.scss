@@ -1,0 +1,28 @@
+.page-header__wrapper {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  order: 4;
+  padding-top: 11px;
+  min-height: 65px;
+
+  &--backgrounded::after {
+    $bg-height: 305px;
+    position: absolute;
+    content: "";
+    bottom: -1 * $bg-height;
+    left: 0;
+    width: 100%;
+    height: $bg-height;
+    background-image: url("../img/index-background-mobile@1x.jpg");
+    background-color: #64a73d;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+}
+
+.page-header__logo {
+  margin-left: calc(20 / 320 * 100%);
+}

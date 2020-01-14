@@ -1,0 +1,8 @@
+.logo[href]:focus,
+.logo[href]:hover {
+  opacity: 0.8;
+}
+
+.logo[href]:active {
+  opacity: 0.6;
+}

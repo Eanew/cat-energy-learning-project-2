@@ -1,0 +1,96 @@
+.extra {
+
+}
+
+.extra__heading {
+  position: relative;
+  border-top: $border-ed;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  margin: 0;
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 400;
+
+  @include wrapper;
+  @include right-line(42px, 268px);
+}
+
+.extra__wrapper {
+  @include wrapper;
+  padding-top: 0;
+  padding-bottom: 35px;
+}
+
+.extra__goods {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border-bottom: $border-ed;
+}
+
+.extra__tbody {
+
+}
+
+.extra__product {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 17px;
+  border-top: $border-ed;
+}
+
+.extra__label {
+  width: 100%;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: left;
+  color: #222222;
+  margin: 14px 0;
+}
+
+.extra__size,
+.extra__price {
+  font-family: $font-secondary;
+  font-size: 14px;
+  line-height: 1;
+  color: #444444;
+}
+
+.extra__button-container {
+  margin-top: 14px;
+  width: 100%;
+}
+
+.extra__button {
+  display: inline-block;
+  vertical-align: center;
+  width: 100%;
+}
+
+.extra__bonus {
+  width: 100%;
+  height: 289px;
+  display: flex;
+  justify-content: center;
+  margin: 39px auto 0;
+  background-image: url("../img/icon-gift.svg"), url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 56px auto, cover;
+  background-position: top 65px center, bottom 25% center;
+  background-color: #6eb147;
+}
+
+.extra__text {
+  width: 170px;
+  margin-top: auto;
+  margin-bottom: 43px;
+  font-family: $font-secondary;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #ffffff;
+  text-align: center;
+}

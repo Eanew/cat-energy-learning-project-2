@@ -1,0 +1,29 @@
+.page-footer {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  padding-top: 76px;
+}
+
+.page-footer__container {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+}
+
+.page-footer__logo {
+  margin: 39px auto 31px;
+  width: 128px;
+  height: 24px;
+
+  &[href]:hover,
+  &[href]:focus {
+    opacity: 0.8;
+  }
+
+  &[href]:active {
+    opacity: 0.6;
+  }
+}

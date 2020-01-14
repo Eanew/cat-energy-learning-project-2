@@ -1,0 +1,26 @@
+body {
+  min-width: 290px;
+  font-family: $font-primary;
+  // font-size: 14px;
+  // line-height: 1.29;
+  color: #111111;
+  text-align: left;
+  margin: 0;
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}

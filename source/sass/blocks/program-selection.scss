@@ -1,0 +1,29 @@
+.program-selection {
+  max-width: 1440px;
+  padding: 20px 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.program-selection__heading {
+  padding: 21px 22px 36px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 36px;
+  line-height: 1.67;
+  font-weight: 400;
+  border-top: $border-ed;
+}
+
+.program-selection__text {
+  padding-left: 20px;
+  padding-right: calc(100% - 250px);
+  margin-top: 0;
+  font-size: 14px;
+  line-height: 1.29;
+  text-transform: uppercase;
+}
+
+.program-selection__form {
+
+}

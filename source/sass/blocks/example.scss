@@ -1,0 +1,78 @@
+.example {
+  background-color: #f2f2f2;
+}
+
+.example__wrapper {
+  padding-top: 30px;
+  padding-bottom: 38px;
+
+  @include wrapper;
+}
+
+.example__heading {
+  margin: 0;
+  font-size: 36px;
+  line-height: 1.67;
+  font-weight: 400;
+}
+
+.example__legend {
+  @include paragraph;
+  margin-top: 30px;
+}
+
+.example__table {
+  margin-top: 30px;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.example__tbody {
+  display: flex;
+  justify-content: center;
+}
+
+.example__result {
+  position: relative;
+  flex: 0 0 124px;
+  min-height: 56px;
+  border: $border-cd;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:not(:first-child) {
+    margin-left: 32px;
+  }
+}
+
+.example__parameter {
+  position: absolute;
+  bottom: -30%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 87px;
+  padding: 0 3px;
+  background-color: #f2f2f2;
+  font-family: $font-secondary;
+  font-size: 12px;
+  line-height: 1;
+  text-align: center;
+  color: #444444;
+}
+
+.example__value {
+  font-size: 24px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.example__spending {
+  margin-top: 35px;
+  font-size: 14px;
+  line-height: 1.43;
+  text-align: center;
+  text-transform: uppercase;
+}
