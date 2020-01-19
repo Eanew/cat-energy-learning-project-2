@@ -17,6 +17,11 @@
   line-height: 1.29;
   text-align: left;
   color: #444444;
+
+  @media (min-width: $screen-m) {
+    font-size: 16px;
+    line-height: 1.5;
+  }
 }
 
 @mixin list-reset {
@@ -30,17 +35,37 @@
     position: absolute;
     content: "";
     top: $top;
-    right: 0;
+    right: -20px;
     width: calc(100% - #{$heading-width});
     height: 3px;
     background-color: $color-primary;
+
+    @media (min-width: $screen-m) {
+      width: calc(100% + 10px - #{$heading-width});
+      right: -30px;
+    }
+
+    @media (min-width: $screen-l) {
+      width: calc(100% + 20px - #{$heading-width});
+      right: -40px;
+    }
   }
 }
 
-@mixin wrapper($padding: 20px, $max-width: 1440px) {
-  padding-left: $padding;
-  padding-right: $padding;
-  max-width: $max-width;
+@mixin wrapper {
+  padding-left: $padding-s;
+  padding-right: $padding-s;
   margin-left: auto;
   margin-right: auto;
+
+  @media (min-width: $screen-m) {
+    padding-left: $padding-m;
+    padding-right: $padding-m;
+  }
+
+  @media (min-width: $screen-l) {
+    padding-left: $padding-l;
+    padding-right: $padding-l;
+    max-width: 1300px;
+  }
 }

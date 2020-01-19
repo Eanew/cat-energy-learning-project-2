@@ -3,6 +3,10 @@
   justify-content: space-between;
   align-items: center;
   margin: 22px 0;
+
+  @media (min-width: $screen-m) {
+    margin: 0;
+  }
 }
 
 .copyright__text {

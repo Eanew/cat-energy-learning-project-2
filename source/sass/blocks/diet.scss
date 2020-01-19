@@ -3,12 +3,12 @@
 }
 
 .diet__list {
+  @include wrapper;
   list-style: none;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
   padding-top: 20px;
   padding-bottom: 20px;
-
-  @include wrapper;
 }
 
 .diet__item {
@@ -26,6 +26,19 @@
     height: 50px;
     border-radius: 50%;
     background-color: $color-primary;
+
+    @media (min-width: $screen-m) {
+      top: 91px;
+      left: auto;
+      right: 60px;
+      width: 200px;
+      height: 200px;
+    }
+  }
+
+  @media (min-width: $screen-m) {
+    padding: 80px 265px 62px 52px;
+    margin-top: 30px;
   }
 }
 
@@ -38,7 +51,21 @@
   height: 49px;
   background-image: url("../img/icon-cat-slim.svg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+
+  @media (min-width: $screen-m) {
+    top: 80px;
+    left: auto;
+    right: 92px;
+    width: 141px;
+    height: 194px;
+  }
+}
+
+.diet__item--pro {
+  @media (min-width: $screen-m) {
+    padding-right: 297px;
+  }
 }
 
 .diet__item--pro::after {
@@ -50,7 +77,15 @@
   height: 28px;
   background-image: url("../img/icon-cat-pro.svg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+
+  @media (min-width: $screen-m) {
+    top: 135px;
+    left: auto;
+    right: 28px;
+    width: 268px;
+    height: 113px;
+  }
 }
 
 .diet__caption {
@@ -60,6 +95,12 @@
   line-height: 1.54;
   font-weight: 400;
   text-transform: uppercase;
+
+  @media (min-width: $screen-m) {
+    padding-left: 0;
+    font-size: 36px;
+    line-height: 1.03;
+  }
 }
 
 .diet__description {
@@ -67,6 +108,11 @@
   padding-bottom: 24px;
   margin: 35px 0 20px;
   border-bottom: 1px solid rgba(#111111, 0.1);
+
+  @media (min-width: $screen-m) {
+    padding-left: 0;
+    border: none;
+  }
 }
 
 .diet__link {

@@ -2,6 +2,10 @@
   @include wrapper;
   padding-top: 0;
   padding-bottom: 42px;
+
+  @media (min-width: $screen-m) {
+    border-bottom: 1px solid rgba(#111111, 0.1);
+  }
 }
 
 .how-it-works__heading {
@@ -16,10 +20,12 @@
   display: flex;
   flex-wrap: wrap;
   align-items: top;
+  justify-content: space-between;
+  counter-reset: section;
 }
 
 .how-it-works__item {
-  flex: 1 0 280px;
+  flex: 0 0 100%;
   position: relative;
   margin-top: 20px;
   min-height: 60px;
@@ -27,14 +33,27 @@
   padding-right: 6px;
   padding-top: 2px;
 
-  &::before {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 60px;
-    height: 60px;
-    background-color: $color-primary;
+  @media (min-width: $screen-m) {
+    flex: 0 0 45%;
+    min-height: 233px;
+    margin-top: 90px;
+    padding-left: 0;
+    padding-right: 70px;
+    padding-top: 110px;
+
+    &::before {
+      position: absolute;
+      z-index: -1;
+      counter-increment: section;
+      content: counter(section);
+      left: 123px;
+      top: -39px;
+      font-family: $font-primary;
+      font-size: 281px;
+      line-height: 1;
+      color: #f2f2f2;
+      text-align: left;
+    }
   }
 
   &::after {
@@ -46,6 +65,12 @@
     height: 60px;
     background-repeat: no-repeat;
     background-position: center;
+    background-color: $color-primary;
+
+    @media (min-width: $screen-m) {
+      width: 80px;
+      height: 80px;
+    }
   }
 }
 

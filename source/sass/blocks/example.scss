@@ -1,24 +1,48 @@
 .example {
   background-color: #f2f2f2;
+
+  @media (min-width: $screen-m) {
+    background-color: #ffffff;
+  }
 }
 
 .example__wrapper {
-  padding-top: 30px;
-  padding-bottom: 38px;
 
-  @include wrapper;
 }
 
 .example__heading {
+  @include wrapper;
+  padding-top: 30px;
   margin: 0;
   font-size: 36px;
   line-height: 1.67;
   font-weight: 400;
+
+  @media (min-width: $screen-m) {
+    font-size: 60px;
+    line-height: 1;
+  }
+}
+
+.example__text-container {
+  @include wrapper;
+
+  @media (min-width: $screen-m) {
+    padding-bottom: 255px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .example__legend {
   @include paragraph;
   margin-top: 30px;
+
+  @media (min-width: $screen-m) {
+    width: 100%;
+  }
 }
 
 .example__table {
@@ -26,6 +50,11 @@
   width: 280px;
   margin-left: auto;
   margin-right: auto;
+
+  @media (min-width: $screen-m) {
+    width: 366px;
+    margin-left: 0;
+  }
 }
 
 .example__tbody {
@@ -36,7 +65,7 @@
 .example__result {
   position: relative;
   flex: 0 0 124px;
-  min-height: 56px;
+  height: 56px;
   border: $border-cd;
   border-radius: 3px;
   display: flex;
@@ -45,6 +74,15 @@
 
   &:not(:first-child) {
     margin-left: 32px;
+  }
+
+  @media (min-width: $screen-m) {
+    flex: 0 0 162px;
+    height: 72px;
+
+    &:not(:first-child) {
+      margin-left: 42px;
+    }
   }
 }
 
@@ -61,12 +99,26 @@
   line-height: 1;
   text-align: center;
   color: #444444;
+
+  @media (min-width: $screen-m) {
+    font-size: 14px;
+    background-color: #ffffff;
+    bottom: -10%;
+    width: auto;
+    white-space: nowrap;
+    padding: 0 8px;
+  }
 }
 
 .example__value {
   font-size: 24px;
   line-height: 1;
   text-transform: uppercase;
+
+  @media (min-width: $screen-m) {
+    font-size: 30px;
+    line-height: 1.23;
+  }
 }
 
 .example__spending {
@@ -75,4 +127,18 @@
   line-height: 1.43;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $screen-m) {
+    width: 180px;
+    font-size: 20px;
+    line-height: 1;
+    text-align: right;
+  }
+}
+
+.example__cost {
+  @media (min-width: $screen-m) {
+    display: inline-block;
+    margin-top: 10px;
+  }
 }

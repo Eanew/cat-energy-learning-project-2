@@ -11,6 +11,16 @@
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $screen-m) {
+    height: 830px;
+    padding-left: 120px;
+    padding-right: 120px;
+    display: block;
+    background-image: url("../img/index-can-tablet@1x.jpg");
+    background-size: 709px 609px;
+    background-position: bottom 0 center;
+  }
 }
 
 .intro__heading {
@@ -22,6 +32,13 @@
   font-weight: 400;
   color: #ffffff;
   text-align: center;
+
+  @media (min-width: $screen-m) {
+    width: 420px;
+    font-size: 60px;
+    text-align: left;
+    color: #111111;
+  }
 }
 
 .intro__text {
@@ -31,6 +48,13 @@
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $screen-m) {
+    margin-top: 35px;
+    font-size: 20px;
+    text-align: left;
+    color: #111111;
+  }
 }
 
 .intro__button {
@@ -38,4 +62,14 @@
   margin-top: auto;
   font-size: 14px;
   line-height: 1.29;
+
+  @media (min-width: $screen-m) {
+    display: inline-block;
+    vertical-align: center;
+    width: auto;
+    margin-top: 28px;
+    padding: 16px 26px;
+    font-size: 20px;
+    line-height: 1;
+  }
 }
