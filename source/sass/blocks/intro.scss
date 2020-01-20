@@ -21,6 +21,13 @@
     background-size: 709px 609px;
     background-position: bottom 0 center;
   }
+
+  @media (min-width: $screen-l) {
+    height: 620px;
+    background-image: url("../img/index-can-desktop@1x.png");
+    background-size: 552px 499px;
+    background-position: top 20% left 64%;
+  }
 }
 
 .intro__heading {
@@ -38,6 +45,10 @@
     font-size: 60px;
     text-align: left;
     color: #111111;
+  }
+
+  @media (min-width: $screen-l) {
+    margin-top: 40px;
   }
 }
 

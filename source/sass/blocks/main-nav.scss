@@ -77,12 +77,22 @@
     border-bottom: 2px solid $color-primary;
     padding-bottom: 9px;
     color: #111111;
+
+    @media (min-width: $screen-l) {
+      border-bottom: 2px solid #ffffff;
+    }
   }
 
   @media (min-width: $screen-m) {
     font-size: 18px;
     line-height: 1.39;
     font-weight: 400;
+  }
+
+  @media (min-width: $screen-l) {
+    font-size: 20px;
+    line-height: 1.25;
+    color: #ffffff;
   }
 }
 

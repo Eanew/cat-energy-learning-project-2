@@ -3,7 +3,7 @@
   padding-top: 0;
   padding-bottom: 42px;
 
-  @media (min-width: $screen-m) {
+  @media (min-width: $screen-m) and (max-width: 1299px) {
     border-bottom: 1px solid rgba(#111111, 0.1);
   }
 }
@@ -13,6 +13,11 @@
   font-size: 36px;
   line-height: 1.67;
   font-weight: 400;
+
+  @media (min-width: $screen-m) {
+    font-size: 60px;
+    line-height: 1;
+  }
 }
 
 .how-it-works__list {
@@ -53,6 +58,15 @@
       line-height: 1;
       color: #f2f2f2;
       text-align: left;
+    }
+  }
+
+  @media (min-width: $screen-l) {
+    flex: 0 0 21%;
+    padding-right: 0;
+
+    &:not(:first-child) {
+      // margin-left: 88px;
     }
   }
 

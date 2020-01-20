@@ -1,5 +1,6 @@
 .page-footer {
-  max-width: 1300px;
+  // max-width: 1300px;
+  max-width: 1440;
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -11,24 +12,25 @@
 }
 
 .page-footer__container {
-  padding: 0 20px;
-  // display: flex;
-  // // flex-direction: column;
-  // flex-wrap: wrap;
+  padding: 0 $padding-s;
+  display: flex;
+  flex-direction: column;
   background-color: #f2f2f2;
 
   @media (min-width: $screen-m) {
     padding: 58px $padding-m;
-    display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
+  }
+
+  @media (min-width: $screen-l) {
+    padding: 58px calc((100% - 1220px) / 2);
   }
 }
 
 .page-footer__logo {
-  display: block;
-  margin: 0 auto;
-  padding: 39px 0 31px;
+  margin: 39px auto 31px;
   width: 128px;
   height: 24px;
 
