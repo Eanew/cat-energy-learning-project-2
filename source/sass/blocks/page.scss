@@ -1,7 +1,7 @@
 body {
   min-width: 320px;
   // max-width: 1300px;
-  max-width: 1440px;
+  // max-width: 1440px;
   margin: 0 auto;
   font-family: $font-primary;
   font-size: 14px;
@@ -10,6 +10,7 @@ body {
   text-align: left;
   background-color: #ffffff;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 *,

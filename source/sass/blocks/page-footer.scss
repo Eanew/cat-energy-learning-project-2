@@ -1,14 +1,5 @@
 .page-footer {
-  // max-width: 1300px;
-  max-width: 1440;
-  margin-left: auto;
-  margin-right: auto;
   position: relative;
-  padding-top: 76px;
-
-  @media (min-width: $screen-m) {
-    padding-top: 197px;
-  }
 }
 
 .page-footer__container {

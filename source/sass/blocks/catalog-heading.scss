@@ -8,4 +8,11 @@
   line-height: 1.67;
   font-weight: 400;
   border-top: $border-ed;
+
+  @media (min-width: $screen-m) {
+    border: none;
+    font-size: 60px;
+    line-height: 1;
+    margin-top: 25px;
+  }
 }

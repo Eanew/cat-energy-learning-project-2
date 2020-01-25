@@ -1,8 +1,8 @@
 .program-selection {
-  max-width: 1300px;
+  // max-width: 1300px;
   padding: 0 0 20px;
-  margin-left: auto;
-  margin-right: auto;
+  // margin-left: auto;
+  // margin-right: auto;
 }
 
 .program-selection__heading {
@@ -26,21 +26,30 @@
 }
 
 .program-selection__text {
-  padding-left: 20px;
-  padding-right: calc(100% - 250px);
   margin-top: 0;
+  margin-bottom: 0;
+  margin-left: $padding-s;
+  width: 325px;
+  // padding-left: 20px;
+  // padding-right: calc(100% - 250px);
+  // margin-top: 0;
   font-size: 14px;
   line-height: 1.29;
   text-transform: uppercase;
 
   @media (min-width: $screen-m) {
-    padding-left: $padding-m;
-    padding-right: calc(100% - 260px);
+    // padding-left: $padding-m;
+    // padding-right: calc(100% - 260px);
+    font-size: 20px;
+    line-height: 1.5;
+    margin-left: $padding-m;
   }
 
   @media (min-width: $screen-l) {
-    padding-left: $padding-l;
-    padding-right: calc(100% - 270px);
+    // padding-left: $padding-l;
+    // padding-right: calc(100% - 270px);
+    margin-left: calc((100% - 1220px) / 2);
+    // margin-left: 40px;
   }
 }
 

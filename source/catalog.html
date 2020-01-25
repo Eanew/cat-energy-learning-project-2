@@ -51,7 +51,10 @@
           <ul class="goods__list">
             <li class="cat-food goods__item">
               <a class="cat-food__image-link" href="" title="Подробнее о товаре">
-                <img class="cat-food__image" src="../img/chicken-small-mobile@1x.jpg" width="140" height="144" alt="Изображение товара">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="../img/chicken-small-tablet@1x.png" width="324" height="172">
+                  <img class="cat-food__image" src="../img/chicken-small-mobile@1x.jpg" width="140" height="144" alt="Изображение товара">
+                </picture>
               </a>
 
               <div class="cat-food__text-container">
@@ -313,9 +316,11 @@
                 Показать все
               </a>
 
-              <h3 class="show-all__heading">
-                Показать еще 100500 товаров
-              </h3>
+              <a class="show-all__heading-link" href="">
+                <h3 class="show-all__heading">
+                  Показать еще 100500 товаров
+                </h3>
+              </a>
 
               <p class="show-all__text">
                 На самом деле вкусов гораздо больше!
@@ -429,8 +434,6 @@
     </main>
 
     <footer class="page-footer">
-      <div class="map"></div>
-
       <div class="contacts contacts--bg-secondary">
         <p class="contacts__vacancy">
           приглашаем к&nbsp;сотрудничеству дилеров!
@@ -443,6 +446,8 @@
           </span>
         </p>
       </div>
+
+      <div class="map"></div>
 
       <div class="page-footer__container">
         <a class="page-footer__logo" href="index.html" title="Главная страница">

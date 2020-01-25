@@ -1,8 +1,9 @@
 .contacts {
-  position: absolute;
+  // position: absolute;
+  // top: 0;
+  // left: 0;
   width: 100%;
-  top: 0;
-  left: 0;
+  // margin-bottom: -38px;
   padding: 18px 20px;
   display: flex;
   justify-content: space-between;
@@ -10,11 +11,22 @@
   background-color: #ffffff;
 
   &--bg-secondary {
-    background-color: #f2f2f2;
+    @media (max-width: 1299px) {
+      background-color: #f2f2f2;
+    }
   }
 
   @media (min-width: $screen-m) {
+    // margin-bottom: 0;
     padding: 66px 71px 59px;
+  }
+
+  @media (min-width: $screen-l) {
+    position: absolute;
+    top: 95px;
+    left: calc((100% - 1220px) / 2);
+    width: 570px;
+    padding: 66px 90px 59px 76px;
   }
 }
 
@@ -32,6 +44,10 @@
     text-align: right;
     padding: 0;
     margin: 0;
+  }
+
+  @media (min-width: $screen-l) {
+    text-align: left;
   }
 }
 

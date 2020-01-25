@@ -30,4 +30,12 @@
 
 .goods__item {
   flex: 1 0 320px;
+
+  @media (min-width: $screen-m) {
+    flex: 1 0 40%;
+  }
+
+  @media (min-width: $screen-l) {
+    flex: 1 0 17%;
+  }
 }

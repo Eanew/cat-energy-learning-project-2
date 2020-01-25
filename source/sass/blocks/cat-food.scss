@@ -6,10 +6,25 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+
+  @media (min-width: $screen-m) {
+    position: relative;
+    border: none;
+    margin-top: 140px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 140px 38px 40px;
+    background-color: #f2f2f2;
+  }
+
+  @media (min-width: $screen-l) {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
 }
 
 .cat-food__image-link {
-  flex: 1 0 140px;
+  width: 50%;
   height: 144px;
   display: flex;
   justify-content: center;
@@ -17,16 +32,32 @@
   &:active {
     opacity: 0.3;
   }
+
+  @media (min-width: $screen-m) {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 126px;
+    left: 50%;
+    transform: translate(-50%, -100%);
+  }
 }
 
 .cat-food__image {
-
+  @media (min-width: $screen-m) {
+    width: 100%;
+  }
 }
 
 .cat-food__text-container {
-  flex: 1 0 140px;
+  width: 50%;
   margin-top: 25px;
   margin-bottom: 23px;
+
+  @media (min-width: $screen-m) {
+    width: 100%;
+    margin-bottom: 33px;
+  }
 }
 
 .cat-food__heading {
@@ -37,6 +68,15 @@
   line-height: 1.25;
   font-weight: 400;
   text-transform: uppercase;
+
+  @media (min-width: $screen-m) {
+    font-size: 20px;
+    line-height: 1;
+    text-align: center;
+    width: 130px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .cat-food__link {
@@ -55,6 +95,11 @@
   font-size: 12px;
   line-height: 1.33;
   color: #444444;
+
+  @media (min-width: $screen-m) {
+    font-size: 16px;
+    line-height: 1;
+  }
 }
 
 .cat-food__tbody {
@@ -64,6 +109,11 @@
 .cat-food__table-row {
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $screen-m) {
+    border-bottom: $border-cd;
+    padding: 8px 0 6px;
+  }
 }
 
 .cat-food__parameter {

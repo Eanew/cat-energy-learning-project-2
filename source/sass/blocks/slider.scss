@@ -1,6 +1,5 @@
 .slider {
   position: relative;
-  max-width: 1300px;
   height: 350px;
   margin-left: auto;
   margin-right: auto;
@@ -15,7 +14,8 @@
   @media (min-width: $screen-l) {
     width: 50%;
     margin-left: 0;
-    padding-left: calc((50% - 650px) / 2);
+    // padding-left: calc((50% - 650px) / 2);
+    padding-left: 0;
   }
 }
 
@@ -24,7 +24,7 @@
   z-index: 2;
   max-width: 320px;
   // width: calc((100% - (100% - 320px)) * 0.5);
-  width: calc(3.2 * 50px); //px = %
+  width: calc(320px * 0.5);
   height: 100%;
   bottom: 0;
   left: 50%;
@@ -55,7 +55,9 @@
     max-width: 650px;
     width: calc(650px * 0.5);
     height: calc(100% + 190px);
-    transform: translateX(-325px);
+    // transform: translateX(-325px);
+    left: 0;
+    transform: none;
   }
 }
 
@@ -92,7 +94,7 @@
   }
 
   @media (min-width: $screen-l) {
-    padding-right: calc((100% - 650px) / 2);
+    padding-right: calc((100% - 650px) / 1);
   }
 }
 
@@ -133,7 +135,11 @@
   }
 
   @media (min-width: $screen-l) {
-    width: calc(100% - (200% - 1220px));
+    // width: calc(100% - (200% - 1220px));
+    // width: 69.44%;
+    left: 40px;
+    transform: none;
+    width: 570px;
   }
 }
 
@@ -218,7 +224,7 @@
       content: "";
       width: 34px;
       height: 34px;
-      right: 3px;
+      right: 0;
       top: 50%;
       transform: translate(50%, -50%);
       border-radius: 50%;
@@ -233,7 +239,7 @@
       content: "";
       width: 8px;
       height: 8px;
-      right: 3px;
+      right: 0;
       top: 50%;
       transform: translate(50%, -50%);
       border-radius: 50%;
