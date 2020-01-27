@@ -175,6 +175,15 @@
   text-align: left;
   text-transform: uppercase;
 
+  &:focus,
+  &:hover {
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $screen-l) {
     font-size: 20px;
   }
@@ -197,9 +206,5 @@
   &:hover::after {
     background-image: url("../img/icon-right-arrow-verylong.svg");
     background-size: 34px 12px;
-  }
-
-  &:active {
-    opacity: 0.3;
   }
 }

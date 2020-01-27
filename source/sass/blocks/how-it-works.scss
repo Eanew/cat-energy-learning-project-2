@@ -36,7 +36,11 @@
   min-height: 60px;
   padding-left: 80px;
   padding-right: 6px;
-  padding-top: 2px;
+
+  @media (max-width: 767px) {
+    display: flex;
+    align-items: center;
+  }
 
   @media (min-width: $screen-m) {
     flex: 0 0 45%;
@@ -64,10 +68,6 @@
   @media (min-width: $screen-l) {
     flex: 0 0 21%;
     padding-right: 0;
-
-    &:not(:first-child) {
-      // margin-left: 88px;
-    }
   }
 
   &::after {

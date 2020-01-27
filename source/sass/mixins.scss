@@ -30,25 +30,23 @@
   list-style: none;
 }
 
-@mixin right-line($top: 42px, $heading-width: 200px) {
-  &::after {
-    position: absolute;
-    content: "";
-    top: $top;
-    right: -20px;
-    width: calc(100% - #{$heading-width});
-    height: 3px;
-    background-color: $color-primary;
+@mixin checkbox-hidden {
+  position: absolute;
+  top: 0.7em;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  transform: translateY(-50%);
+  opacity: 0;
+}
 
-    @media (min-width: $screen-m) {
-      width: calc(100% + 10px - #{$heading-width});
-      right: -30px;
-    }
+@mixin max-width ($small: 660px, $middle: 1060px) {
+  max-width: $small;
+  margin-left: auto;
+  margin-right: auto;
 
-    @media (min-width: $screen-l) {
-      width: calc(100% + 20px - #{$heading-width});
-      right: -40px;
-    }
+  @media (min-width: $screen-m) and (max-width: 1299px) {
+    max-width: $middle;
   }
 }
 
