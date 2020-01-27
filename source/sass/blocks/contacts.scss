@@ -18,6 +18,7 @@
 
   @media (min-width: $screen-l) {
     position: absolute;
+    z-index: 10;
     top: 95px;
     left: calc((100% - 1220px) / 2);
     width: 570px;
