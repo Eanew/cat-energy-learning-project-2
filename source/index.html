@@ -7,7 +7,7 @@
     <meta name="description" content="" />
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <script>
       document.createElement( "picture" );
     </script>
@@ -15,10 +15,14 @@
   </head>
 
   <body class="page">
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+
     <header class="page-header">
       <div class="page-header__wrapper page-header__wrapper--backgrounded">
         <a class="logo page-header__logo" title="Главная страница">
-          <img class="logo__image" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип сайта Cat Energy">
+          <img class="logo__image" src="../img/logo-mobile.svg" width="191" height="39" alt="Логотип сайта Cat Energy">
         </a>
 
         <nav class="main-nav">

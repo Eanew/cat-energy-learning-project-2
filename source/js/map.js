@@ -36,12 +36,6 @@ document.addEventListener("DOMContentLoaded", () => {
       desktop: [-62, -106],
     };
 
-    // const mapZoom = {
-    //   mobile: 17,
-    //   tablet: 17,
-    //   desktop: 17,
-    // }
-
     const mapCenter = {
       mobile: [59.938631, 30.323055],
       tablet: [59.938631, 30.323055],
@@ -53,7 +47,6 @@ document.addEventListener("DOMContentLoaded", () => {
     function createMap(currentDevice) {
       return new ymaps.Map(document.querySelector(".map"), {
         center: mapCenter[currentDevice],
-        // zoom: mapZoom[currentDevice],
         zoom: 17,
         controls: []
       })
