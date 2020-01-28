@@ -59,7 +59,8 @@
   padding-bottom: 35px;
 
   @media (min-width: $screen-l) {
-    display: flex;
+    // display: flex;
+    width: 1300px;
     margin-bottom: 51px;
   }
 }
@@ -75,14 +76,18 @@
   }
 
   @media (min-width: $screen-l) {
-    width: 895px;
+    // width: 895px;
+    width: 73.36%;
+    outline: 2px solid green;
   }
 }
 
 .extra__tbody {
   @media (min-width: $screen-l) {
-    display: flex;
-    flex-wrap: wrap;
+    // display: flex;
+    // flex-wrap: wrap;
+    max-width: 100%;
+    outline: 2px solid blue;
   }
 }
 
@@ -208,7 +213,7 @@
   }
 
   @media (min-width: $screen-l) {
-    width: 245px;
+    width: 20.08%;
     margin-top: 0;
     margin-left: 80px;
   }

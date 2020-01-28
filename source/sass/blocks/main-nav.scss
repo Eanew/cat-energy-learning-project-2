@@ -1,5 +1,5 @@
 .main-nav {
-
+  margin-left: auto;
 }
 
 .main-nav__list {
@@ -9,7 +9,7 @@
   @media (min-width: $screen-m) {
     display: flex;
     flex-direction: flex-end;
-    margin-top: 0;
+    margin-right: 0;
   }
 }
 
