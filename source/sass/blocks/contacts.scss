@@ -1,8 +1,5 @@
 .contacts {
-  position: absolute;
   width: 100%;
-  top: 0;
-  left: 0;
   padding: 18px 20px;
   display: flex;
   justify-content: space-between;
@@ -10,7 +7,22 @@
   background-color: #ffffff;
 
   &--bg-secondary {
-    background-color: #f2f2f2;
+    @media (max-width: 1299px) {
+      background-color: #f2f2f2;
+    }
+  }
+
+  @media (min-width: $screen-m) {
+    padding: 66px 71px 59px;
+  }
+
+  @media (min-width: $screen-l) {
+    position: absolute;
+    z-index: 10;
+    top: 95px;
+    left: calc((100% - 1220px) / 2);
+    width: 570px;
+    padding: 66px 90px 59px 76px;
   }
 }
 
@@ -20,6 +32,26 @@
   font-size: 14px;
   line-height: 1.43;
   color: #444444;
+
+  @media (min-width: $screen-m) {
+    flex: 0 0 160px;
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: right;
+    padding: 0;
+    margin: 0;
+  }
+
+  @media (min-width: $screen-l) {
+    text-align: left;
+  }
+}
+
+.contacts__city {
+  @media (min-width: $screen-m) {
+    display: inline-block;
+    margin-top: 20px;
+  }
 }
 
 .contacts__vacancy {
@@ -27,4 +59,11 @@
   font-size: 16px;
   line-height: 1.25;
   text-transform: uppercase;
+
+  @media (min-width: $screen-m) {
+    font-size: 20px;
+    line-height: 1.25;
+    padding: 0;
+    margin: 0;
+  }
 }

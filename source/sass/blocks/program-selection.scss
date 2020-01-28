@@ -1,29 +1,53 @@
 .program-selection {
-  max-width: 1440px;
-  padding: 20px 0;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 0 0 20px;
+
+  @media (min-width: $screen-m) {
+    margin-bottom: 52px;
+  }
 }
 
 .program-selection__heading {
-  padding: 21px 22px 36px;
+  @include wrapper;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 30px;
+  padding-top: 20px;
   font-size: 36px;
   line-height: 1.67;
   font-weight: 400;
   border-top: $border-ed;
+
+  @media (min-width: $screen-m) {
+    font-size: 60px;
+    line-height: 1;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    border: none;
+  }
+}
+
+.program-selection__text-wrapper {
+  @include wrapper;
+  margin-bottom: 39px;
+
+  @media (min-width: $screen-m) {
+    margin-bottom: 69px;
+  }
 }
 
 .program-selection__text {
-  padding-left: 20px;
-  padding-right: calc(100% - 250px);
-  margin-top: 0;
+  width: 240px;
   font-size: 14px;
   line-height: 1.29;
   text-transform: uppercase;
-}
 
-.program-selection__form {
+  @media (min-width: $screen-m) {
+    width: 330px;
+    margin-left: 40px;
+    font-size: 20px;
+    line-height: 1.5;
+  }
 
+  @media (min-width: $screen-l) {
+    margin-left: 0;
+  }
 }

@@ -1,11 +1,25 @@
 .page-header__wrapper {
-  max-width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
   position: relative;
   order: 4;
   padding-top: 11px;
   min-height: 65px;
+
+  @media (min-width: $screen-m) {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: $padding-m;
+    padding-right: $padding-m;
+  }
+
+  @media (min-width: $screen-l) {
+    padding-left: $padding-l;
+    padding-right: $padding-l;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   &--backgrounded::after {
     $bg-height: 305px;
@@ -20,9 +34,27 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+
+    @media (min-width: $screen-m) and (max-width: 1299px) {
+      display: none;
+    }
+
+    @media (min-width: $screen-l) {
+      z-index: -1;
+      height: 696px;
+      width: 50vw;
+      left: 50%;
+      top: 0;
+      background-size: cover;
+      background-position: left 0 center;
+    }
   }
 }
 
 .page-header__logo {
-  margin-left: calc(20 / 320 * 100%);
+  margin-left: $padding-s;
+
+  @media (min-width: $screen-m) {
+    margin-left: 0;
+  }
 }

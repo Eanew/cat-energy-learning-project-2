@@ -1,25 +1,67 @@
 .extra {
+  position: relative;
+  border-top: $border-ed;
+  margin-top: 7px;
 
+  @media (min-width: $screen-m) {
+    border: none;
+    margin-top: 50px;
+  }
+}
+
+.extra__heading-wrapper {
+  @include wrapper;
+  position: relative;
+
+  @media (min-width: $screen-l) {
+    padding-left: 10px;
+  }
+
+  &::before {
+    position: absolute;
+    z-index: -1;
+    content: "";
+    top: 42px;
+    right: 0;
+    width: calc(100% - 20px);
+    height: 3px;
+    background-color: $leaf;
+
+    @media (min-width: $screen-m) {
+      right: 50%;
+      transform: translateX(50%);
+      width: 100vw;
+    }
+  }
 }
 
 .extra__heading {
-  position: relative;
-  border-top: $border-ed;
-  padding-top: 28px;
-  padding-bottom: 28px;
-  margin: 0;
+  padding: 0;
+  padding-right: 25px;
+  margin: 27px 0 31px;
   font-size: 24px;
   line-height: 1;
   font-weight: 400;
+  display: inline-block;
+  vertical-align: bottom;
+  background-color: #ffffff;
 
-  @include wrapper;
-  @include right-line(42px, 268px);
+  @media (min-width: $screen-m) {
+    padding: 0 30px;
+    font-size: 36px;
+    margin: 21px 0 80px;
+  }
 }
 
 .extra__wrapper {
   @include wrapper;
   padding-top: 0;
   padding-bottom: 35px;
+
+  @media (min-width: $screen-l) {
+    display: flex;
+    margin-bottom: 51px;
+  }
 }
 
 .extra__goods {
@@ -27,18 +69,51 @@
   margin: 0;
   padding: 0;
   border-bottom: $border-ed;
+
+  @media (min-width: $screen-m) and (max-width: 1299px) {
+    border: $border-ed;
+  }
+
+  @media (min-width: $screen-l) {
+    width: 895px;
+  }
 }
 
 .extra__tbody {
-
+  @media (min-width: $screen-l) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .extra__product {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  align-items: baseline;
   padding-bottom: 17px;
   border-top: $border-ed;
+
+  @media (min-width: $screen-m) {
+    justify-content: flex-end;
+    padding: 14px 38px 28px;
+
+    &:first-child {
+      border: none;
+    }
+  }
+
+  @media (min-width: $screen-l) {
+    width: 100%;
+    min-height: 71px;
+    padding: 0;
+    justify-content: flex-start;
+    align-items: center;
+
+    &:first-child {
+      border-top: $border-ed;
+    }
+  }
 }
 
 .extra__label {
@@ -50,6 +125,16 @@
   text-align: left;
   color: #222222;
   margin: 14px 0;
+
+  @media (min-width: $screen-m) {
+    width: 200px;
+    margin-right: auto;
+    font-size: 20px;
+  }
+
+  @media (min-width: $screen-l) {
+    margin: 0;
+  }
 }
 
 .extra__size,
@@ -58,11 +143,44 @@
   font-size: 14px;
   line-height: 1;
   color: #444444;
+
+  @media (min-width: $screen-m) {
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: right;
+  }
+
+  @media (min-width: $screen-l) {
+    text-align: left;
+  }
+}
+
+.extra__size {
+  @media (min-width: $screen-m) {
+    width: 200px;
+    margin-left: 125px;
+  }
+}
+
+.extra__price {
+  @media (min-width: $screen-m) {
+    width: 95px;
+  }
+
+  @media (min-width: $screen-l) {
+    width: 80px;
+    margin-left: auto;
+  }
 }
 
 .extra__button-container {
   margin-top: 14px;
   width: 100%;
+
+  @media (min-width: $screen-l) {
+    width: 245px;
+    margin-top: 0;
+  }
 }
 
 .extra__button {
@@ -82,6 +200,18 @@
   background-size: 56px auto, cover;
   background-position: top 65px center, bottom 25% center;
   background-color: #6eb147;
+
+  @media (min-width: $screen-m) and (max-width: 1299px) {
+    height: 200px;
+    background-position: center left 12.85%, bottom 30% center;
+    margin: 69px auto 76px;
+  }
+
+  @media (min-width: $screen-l) {
+    width: 245px;
+    margin-top: 0;
+    margin-left: 80px;
+  }
 }
 
 .extra__text {
@@ -93,4 +223,11 @@
   line-height: 1.25;
   color: #ffffff;
   text-align: center;
+
+  @media (min-width: $screen-m) and (max-width: 1299px) {
+    margin-right: 16%;
+    margin-left: auto;
+    margin-bottom: auto;
+    text-align: left;
+  }
 }

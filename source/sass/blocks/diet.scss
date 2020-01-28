@@ -3,12 +3,20 @@
 }
 
 .diet__list {
+  @include wrapper;
   list-style: none;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
   padding-top: 20px;
   padding-bottom: 20px;
 
-  @include wrapper;
+  @media (min-width: $screen-m) {
+    margin-bottom: 59px;
+  }
+
+  @media (min-width: $screen-l) {
+    display: flex;
+  }
 }
 
 .diet__item {
@@ -16,6 +24,16 @@
   margin-top: 20px;
   padding: 30px 20px 22px;
   background-color: #f2f2f2;
+
+  @media (min-width: $screen-m) {
+    padding: 80px 265px 62px 52px;
+    margin-top: 30px;
+  }
+
+  @media (min-width: $screen-l) {
+    flex: 1 0 570px;
+    padding-right: 56px;
+  }
 
   &::before {
     position: absolute;
@@ -26,6 +44,21 @@
     height: 50px;
     border-radius: 50%;
     background-color: $color-primary;
+
+    @media (min-width: $screen-m) {
+      top: 91px;
+      left: auto;
+      right: 60px;
+      width: 200px;
+      height: 200px;
+    }
+
+    @media (min-width: $screen-l) {
+      top: 47px;
+      left: 52px;
+      width: 100px;
+      height: 100px;
+    }
   }
 }
 
@@ -38,7 +71,34 @@
   height: 49px;
   background-image: url("../img/icon-cat-slim.svg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+
+  @media (min-width: $screen-m) {
+    top: 80px;
+    left: auto;
+    right: 92px;
+    width: 141px;
+    height: 194px;
+  }
+
+  @media (min-width: $screen-l) {
+    top: 41px;
+    right: auto;
+    left: 65px;
+    width: 71px;
+    height: 97px;
+  }
+}
+
+.diet__item--pro {
+  @media (min-width: $screen-m) {
+    padding-right: 297px;
+  }
+
+  @media (min-width: $screen-l) {
+    margin-left: 80px;
+    padding-right: 72px;
+  }
 }
 
 .diet__item--pro::after {
@@ -50,7 +110,23 @@
   height: 28px;
   background-image: url("../img/icon-cat-pro.svg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+
+  @media (min-width: $screen-m) {
+    top: 135px;
+    left: auto;
+    right: 28px;
+    width: 268px;
+    height: 113px;
+  }
+
+  @media (min-width: $screen-l) {
+    top: 69px;
+    right: auto;
+    left: 34px;
+    width: 134px;
+    height: 57px;
+  }
 }
 
 .diet__caption {
@@ -60,6 +136,16 @@
   line-height: 1.54;
   font-weight: 400;
   text-transform: uppercase;
+
+  @media (min-width: $screen-m) {
+    padding-left: 0;
+    font-size: 36px;
+    line-height: 1.03;
+  }
+
+  @media (min-width: $screen-l) {
+    margin-left: 164px;
+  }
 }
 
 .diet__description {
@@ -67,6 +153,15 @@
   padding-bottom: 24px;
   margin: 35px 0 20px;
   border-bottom: 1px solid rgba(#111111, 0.1);
+
+  @media (min-width: $screen-m) {
+    padding-left: 0;
+    border: none;
+  }
+
+  @media (min-width: $screen-l) {
+    margin: 75px 0 11px;
+  }
 }
 
 .diet__link {
@@ -79,6 +174,19 @@
   color: #111111;
   text-align: left;
   text-transform: uppercase;
+
+  &:focus,
+  &:hover {
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $screen-l) {
+    font-size: 20px;
+  }
 
   &::after {
     position: absolute;
@@ -98,9 +206,5 @@
   &:hover::after {
     background-image: url("../img/icon-right-arrow-verylong.svg");
     background-size: 34px 12px;
-  }
-
-  &:active {
-    opacity: 0.3;
   }
 }

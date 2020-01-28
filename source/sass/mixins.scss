@@ -17,6 +17,11 @@
   line-height: 1.29;
   text-align: left;
   color: #444444;
+
+  @media (min-width: $screen-m) {
+    font-size: 16px;
+    line-height: 1.5;
+  }
 }
 
 @mixin list-reset {
@@ -25,22 +30,40 @@
   list-style: none;
 }
 
-@mixin right-line($top: 42px, $heading-width: 200px) {
-  &::after {
-    position: absolute;
-    content: "";
-    top: $top;
-    right: 0;
-    width: calc(100% - #{$heading-width});
-    height: 3px;
-    background-color: $color-primary;
+@mixin checkbox-hidden {
+  position: absolute;
+  top: 0.7em;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  transform: translateY(-50%);
+  opacity: 0;
+}
+
+@mixin max-width ($small: 660px, $middle: 1060px) {
+  max-width: $small;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: $screen-m) and (max-width: 1299px) {
+    max-width: $middle;
   }
 }
 
-@mixin wrapper($padding: 20px, $max-width: 1440px) {
-  padding-left: $padding;
-  padding-right: $padding;
-  max-width: $max-width;
+@mixin wrapper {
+  padding-left: $padding-s;
+  padding-right: $padding-s;
   margin-left: auto;
   margin-right: auto;
+
+  @media (min-width: $screen-m) {
+    padding-left: $padding-m;
+    padding-right: $padding-m;
+  }
+
+  @media (min-width: $screen-l) {
+    padding-left: $padding-l;
+    padding-right: $padding-l;
+    max-width: 1300px;
+  }
 }

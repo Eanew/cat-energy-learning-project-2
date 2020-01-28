@@ -1,9 +1,18 @@
 .catalog-heading {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 21px 22px 36px;
+  @include wrapper;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 21px;
+  padding-bottom: 36px;
   font-size: 36px;
   line-height: 1.67;
   font-weight: 400;
   border-top: $border-ed;
+
+  @media (min-width: $screen-m) {
+    border: none;
+    font-size: 60px;
+    line-height: 1;
+    margin-top: 25px;
+  }
 }
