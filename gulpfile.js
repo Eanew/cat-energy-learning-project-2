@@ -32,6 +32,19 @@ gulp.task("css", function () {
     .pipe(server.stream());
 });
 
+gulp.task("cssdefault", function () {
+  return gulp.src("source/sass/style.scss")
+    .pipe(plumber())
+    .pipe(sourcemap.init())
+    .pipe(sass())
+    .pipe(postcss([
+      autoprefixer()
+    ]))
+    .pipe(sourcemap.write("."))
+    .pipe(gulp.dest("build/css"))
+    .pipe(server.stream());
+});
+
 gulp.task("imagemin", () =>
   gulp
     .src("source/img/**/*.{png,jpg,svg}")
@@ -156,6 +169,7 @@ gulp.task("build", gulp.series(
   "babel",
   "script",
   "css",
+  "cssdefault",
   "sprite-svg",
   "html"
 ));
