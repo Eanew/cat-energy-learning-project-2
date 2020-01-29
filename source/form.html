@@ -29,11 +29,22 @@
         </a>
 
         <nav class="main-nav">
+          
+          <!-- Селектор .burger.nojs добавляет кнопке свойство "display: none;" до тех пор,
+          пока у тега button через javascript не будет удалён класс .nojs при его подключении.
+          Переключение классов .burger--on и .burger--off меняет иконку кнопки
+          с бургера на крестик соответственно. -->
           <button class="burger burger--on nojs" type="button">
             Показать меню
           </button>
 
           <div class="main-nav__wrapper">
+            
+            <!-- Селектор .main-nav__list.nojs добавляет списку навигации свойство "display: block;",
+              чтобы он отображался на сайте по умолчанию до тех пор,
+              пока у тега ul через javascript не будет удалён класс nojs при его подключении.
+              У списка навигации останется свойство "display: none;",
+              заданное у класса .main-nav__list, чтобы он отображался только при нажатии на кнопку-бургер. -->
             <ul class="main-nav__list nojs">
               <li class="main-nav__item">
                 <a class="main-nav__link" href="index.html">Главная</a>
@@ -140,9 +151,9 @@
 
           <fieldset class="form__fieldset form__fieldset--extra">
             <legend class="form__legend">
-              <h2 class="form__title form__title--extra">
+              <span class="form__title form__title--extra">
                 Дополнительно
-              </h2>
+              </span>
             </legend>
 
             <label class="form__field-checkbox">
@@ -239,7 +250,7 @@
       </div>
     </footer>
 
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;"></script>
     <script src="js/map.js"></script>
   </body>
 </html>

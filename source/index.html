@@ -29,11 +29,22 @@
         </a>
 
         <nav class="main-nav">
+          
+          <!-- Селектор .burger.nojs добавляет кнопке свойство "display: none;" до тех пор,
+          пока у тега button через javascript не будет удалён класс .nojs при его подключении.
+          Переключение классов .burger--on и .burger--off меняет иконку кнопки
+          с бургера на крестик соответственно. -->
           <button class="burger burger--on nojs" type="button">
             Показать меню
           </button>
 
           <div class="main-nav__wrapper">
+            
+            <!-- Селектор .main-nav__list.nojs добавляет списку навигации свойство "display: block;",
+              чтобы он отображался на сайте по умолчанию до тех пор,
+              пока у тега ul через javascript не будет удалён класс .nojs при его подключении.
+              У списка навигации останется свойство "display: none;",
+              заданное у класса .main-nav__list, чтобы он отображался только при нажатии на кнопку-бургер. -->
             <ul class="main-nav__list nojs">
               <li class="main-nav__item">
                 <a class="main-nav__link main-nav__link--active">Главная</a>
@@ -172,7 +183,7 @@
                 ../img/before-tablet@1x.png 1x">
               <source type="image/webp" srcset="../img/before-mobile@2x.webp 2x,
                 ../img/before-mobile@1x.webp 1x">
-              <img class="slider__img--before" src="../img/before-mobile@1x.png" srcset="../img/before-mobile@2x.png 2x,
+              <img class="slider__img-before" src="../img/before-mobile@1x.png" srcset="../img/before-mobile@2x.png 2x,
               ../img/before-mobile@1x.png 1x" width="320" height="240" alt="До курса питания">
             </picture>
           </div>
@@ -189,7 +200,7 @@
                 ../img/after-tablet@1x.png 1x">
               <source type="image/webp" srcset="../img/after-mobile@2x.webp 2x,
                 ../img/after-mobile@1x.webp 1x">
-              <img class="slider__img--after" src="../img/after-mobile@1x.png" srcset="../img/after-mobile@2x.png 2x,
+              <img class="slider__img-after" src="../img/after-mobile@1x.png" srcset="../img/after-mobile@2x.png 2x,
               ../img/after-mobile@1x.png 1x" width="320" height="240" alt="После курса питания">
             </picture>
           </div>
@@ -273,7 +284,7 @@
       </div>
     </footer>
 
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;"></script>
     <script src="js/map.js"></script>
   </body>
 </html>
