@@ -75,19 +75,13 @@
   }
 
   @media (min-width: $screen-l) {
-    width: 895px;
-  }
-}
-
-.extra__tbody {
-  @media (min-width: $screen-l) {
-    display: flex;
-    flex-wrap: wrap;
+    width: 73.37%;
   }
 }
 
 .extra__product {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: baseline;
@@ -95,7 +89,7 @@
   border-top: $border-ed;
 
   @media (min-width: $screen-m) {
-    justify-content: flex-end;
+    justify-content: flex-start;
     padding: 14px 38px 28px;
 
     &:first-child {
@@ -104,11 +98,7 @@
   }
 
   @media (min-width: $screen-l) {
-    width: 100%;
-    min-height: 71px;
-    padding: 0;
-    justify-content: flex-start;
-    align-items: center;
+    padding: 14px 0;
 
     &:first-child {
       border-top: $border-ed;
@@ -117,6 +107,7 @@
 }
 
 .extra__label {
+  display: block;
   width: 100%;
   font-size: 16px;
   line-height: 1;
@@ -127,8 +118,7 @@
   margin: 14px 0;
 
   @media (min-width: $screen-m) {
-    width: 200px;
-    margin-right: auto;
+    width: 30%;
     font-size: 20px;
   }
 
@@ -157,25 +147,33 @@
 
 .extra__size {
   @media (min-width: $screen-m) {
-    width: 200px;
-    margin-left: 125px;
+    display: inline-block;
+    vertical-align: bottom;
+    margin-left: auto;
+  }
+
+  @media (min-width: $screen-l) {
+    width: 242px;
   }
 }
 
 .extra__price {
+  display: inline-block;
+  vertical-align: bottom;
+
   @media (min-width: $screen-m) {
     width: 95px;
   }
 
   @media (min-width: $screen-l) {
     width: 80px;
-    margin-left: auto;
   }
 }
 
 .extra__button-container {
   margin-top: 14px;
   width: 100%;
+  display: block;
 
   @media (min-width: $screen-l) {
     width: 245px;
@@ -194,29 +192,45 @@
   height: 289px;
   display: flex;
   justify-content: center;
+  align-items: flex-end;
   margin: 39px auto 0;
   background-image: url("../img/icon-gift.svg"), url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat, no-repeat;
-  background-size: 56px auto, cover;
+  background-size: 56px 61px, cover;
   background-position: top 65px center, bottom 25% center;
   background-color: #6eb147;
 
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/icon-gift.svg"), url("../img/gift-photo-mobile@2x.jpg");
+  }
+
   @media (min-width: $screen-m) and (max-width: 1299px) {
     height: 200px;
-    background-position: center left 12.85%, bottom 30% center;
+    justify-content: flex-end;
+    align-items: center;
+    background-image: url("../img/icon-gift.svg"), url("../img/gift-photo-tablet@1x.jpg");
+    background-position: center left 12.85%, center;
     margin: 69px auto 76px;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/icon-gift.svg"), url("../img/gift-photo-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: $screen-l) {
-    width: 245px;
+    width: 20.08%;
     margin-top: 0;
-    margin-left: 80px;
+    margin-left: 6.55%;
+    background-image: url("../img/icon-gift.svg"), url("../img/gift-photo-desktop@1x.jpg");
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/icon-gift.svg"), url("../img/gift-photo-desktop@2x.jpg");
+    }
   }
 }
 
 .extra__text {
   width: 170px;
-  margin-top: auto;
   margin-bottom: 43px;
   font-family: $font-secondary;
   font-size: 16px;
@@ -226,8 +240,7 @@
 
   @media (min-width: $screen-m) and (max-width: 1299px) {
     margin-right: 16%;
-    margin-left: auto;
-    margin-bottom: auto;
+    margin-bottom: 0;
     text-align: left;
   }
 }

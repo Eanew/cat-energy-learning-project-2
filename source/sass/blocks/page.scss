@@ -9,7 +9,7 @@ body {
   background-color: #ffffff;
   box-sizing: border-box;
 
-  @media (min-width: $screen-m) {
+  @media (min-width: 320px) {
     overflow-x: hidden;
   }
 }

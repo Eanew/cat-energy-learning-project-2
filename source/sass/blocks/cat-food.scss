@@ -45,7 +45,16 @@
 
 .cat-food__image {
   @media (min-width: $screen-m) {
-    width: 100%;
+    width: 324px;
+    height: 172px;
+
+    &--big {
+      height: 208px;
+    }
+  }
+
+  @media (min-width: $screen-l) {
+    width: 245px;
   }
 }
 
@@ -117,11 +126,12 @@
 }
 
 .cat-food__parameter {
-
 }
 
 .cat-food__value {
-
+  display: inline-block;
+  vertical-align: bottom;
+  text-align: right;
 }
 
 .cat-food__button {

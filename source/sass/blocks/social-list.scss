@@ -28,23 +28,6 @@
   margin-right: 40px;
 }
 
-.social-list__item--instagram-big {
-  margin-left: 36px;
-  margin-right: 40px;
-
-  @media (max-width: 767px) {
-    margin-left: 34px;
-    margin-right: 36px;
-  }
-}
-
-.social-list__icon-instagram--big {
-  @media (max-width: 767px) {
-    width: 23px;
-    height: 23px;
-  }
-}
-
 .social-list__link {
   font-size: 0;
 }

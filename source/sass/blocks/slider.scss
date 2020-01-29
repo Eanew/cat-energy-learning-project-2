@@ -5,6 +5,10 @@
   margin-right: auto;
   padding-left: calc((100% - 320px) / 2);
 
+  @media (max-width: 767px) {
+    overflow-x: hidden;
+  }
+
   @media (min-width: $screen-m) {
     background-color: #f2f2f2;
     height: 462px;
@@ -61,19 +65,19 @@
 .slider__img--before {
   position: absolute;
   z-index: 3;
-  max-width: 320px;
+  max-width: none;
   bottom: 88px;
   left: 160px;
   transform: translateX(-50%);
 
   @media (min-width: $screen-m) {
-    max-width: 768px;
+    width: 690px;
+    height: 517;
     left: 384px;
     bottom: 114px;
   }
 
   @media (min-width: $screen-l) {
-    max-width: 650px;
     left: 325px;
     bottom: 135px;
   }
@@ -97,19 +101,18 @@
 
 .slider__img--after {
   position: absolute;
-  max-width: 320px;
   bottom: 88px;
   left: 160px;
   transform: translateX(-50%);
 
   @media (min-width: $screen-m) {
-    max-width: 768px;
+    width: 690px;
+    height: 517;
     left: 384px;
     bottom: 114px;
   }
 
   @media (min-width: $screen-l) {
-    max-width: 650px;
     left: 325px;
     bottom: 135px;
   }
@@ -139,6 +142,7 @@
 }
 
 .slider__status {
+  flex-shrink: 0;
   border: none;
   background: none;
   padding: 0;
