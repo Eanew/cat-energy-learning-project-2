@@ -1,15 +1,22 @@
 .main-nav {
-
+  margin-left: auto;
 }
 
 .main-nav__list {
   @include list-reset;
   margin-top: 11px;
+  display: none;
 
   @media (min-width: $screen-m) {
     display: flex;
     flex-direction: flex-end;
     margin-top: 0;
+  }
+}
+
+.main-nav__list.nojs {
+  @media (max-width: 767px) {
+    display: block;
   }
 }
 

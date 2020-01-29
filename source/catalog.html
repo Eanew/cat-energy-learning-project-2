@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="description" content="" />
     <title>Каталог товаров</title>
-    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
     <link rel="stylesheet" href="css/style.min.css">
     <script>
       document.createElement( "picture" );
@@ -30,12 +29,12 @@
         </a>
 
         <nav class="main-nav">
-          <button class="burger main-nav__toggle" type="button">
+          <button class="burger burger--on nojs" type="button">
             Показать меню
           </button>
 
           <div class="main-nav__wrapper">
-            <ul class="main-nav__list">
+            <ul class="main-nav__list nojs">
               <li class="main-nav__item">
                 <a class="main-nav__link" href="index.html">Главная</a>
               </li>
@@ -65,7 +64,7 @@
 
         <div class="goods__wrapper">
           <ul class="goods__list">
-            <li class="cat-food goods__item">
+            <li class="cat-food goods__item" id="pro">
               <a class="cat-food__image-link" href="" title="Подробнее о товаре">
                 <picture>
                   <source type="image/webp" media="(min-width: 1300px)" srcset="../img/chicken-small-desktop@2x.webp 2x,
@@ -265,7 +264,7 @@
               </a>
             </li>
 
-            <li class="cat-food goods__item">
+            <li class="cat-food goods__item" id="slim">
               <a class="cat-food__image-link" href="" title="Подробнее о товаре">
                 <picture>
                   <source type="image/webp" media="(min-width: 1300px)" srcset="../img/buckwheat-small-desktop@2x.webp 2x,
@@ -403,7 +402,7 @@
                     </tr>
 
                     <tr class="cat-food__table-row">
-                      <th class="cat-food__parameter">Цена</th>
+                      <td class="cat-food__parameter">Цена</td>
                       <td class="cat-food__value">500 Р.</td>
                     </tr>
                   </tbody>

@@ -32,10 +32,11 @@
   width: 100%;
 
   @media (min-width: $screen-m) {
-    flex: 1 0 40%;
+    width: 41.52%;
+    flex-grow: 1;
   }
 
   @media (min-width: $screen-l) {
-    flex: 1 0 17%;
+    width: 18%;
   }
 }

@@ -1,22 +1,22 @@
 .page-footer {
   position: relative;
+  background-color: #f2f2f2;
 }
 
 .page-footer__container {
-  padding: 0 $padding-s;
+  @include wrapper;
   display: flex;
   flex-direction: column;
-  background-color: #f2f2f2;
 
   @media (min-width: $screen-m) {
-    padding: 58px $padding-m;
+    padding-top: 58px;
+    padding-bottom: 58px;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
   }
 
   @media (min-width: $screen-l) {
-    padding: 58px calc((100% - 1220px) / 2);
   }
 }
 

@@ -1,5 +1,5 @@
 .burger {
-  display: none;
+  display: block;
   position: absolute;
   top: 23px;
   right: 22px;
@@ -7,33 +7,38 @@
   background: none;
   border: none;
   cursor: pointer;
+}
 
-  @media (min-width: $screen-m) {
+.burger--on::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: -3px;
+  width: 25px;
+  height: 19px;
+  background-image: url("../img/icon-mobile-menu.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.burger--off::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  width: 19px;
+  height: 19px;
+  background-image: url("../img/icon-close.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.burger.nojs {
+  display: none;
+}
+
+@media (min-width: $screen-m) {
+  .burger {
     display: none;
-  }
-
-  &::before {
-    display: none;
-    position: absolute;
-    content: "";
-    top: 0;
-    right: -3px;
-    width: 25px;
-    height: 19px;
-    background-image: url("../img/icon-mobile-menu.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  &::after {
-    position: absolute;
-    content: "";
-    top: 0;
-    right: 0;
-    width: 19px;
-    height: 19px;
-    background-image: url("../img/icon-close.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
   }
 }

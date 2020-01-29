@@ -30,7 +30,7 @@
 }
 
 .how-it-works__item {
-  flex: 0 0 100%;
+  width: 100%;
   position: relative;
   margin-top: 20px;
   min-height: 60px;
@@ -43,7 +43,7 @@
   }
 
   @media (min-width: $screen-m) {
-    flex: 0 0 45%;
+    max-width: 45%;
     min-height: 233px;
     margin-top: 90px;
     padding-left: 0;

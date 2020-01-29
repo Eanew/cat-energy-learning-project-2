@@ -126,11 +126,12 @@
 }
 
 .cat-food__parameter {
-
 }
 
 .cat-food__value {
-
+  display: inline-block;
+  vertical-align: bottom;
+  text-align: right;
 }
 
 .cat-food__button {
