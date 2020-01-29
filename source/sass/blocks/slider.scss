@@ -1,6 +1,6 @@
 .slider {
   position: relative;
-  height: 350px;
+  height: 348px;
   margin-left: auto;
   margin-right: auto;
   padding-left: calc((100% - 320px) / 2);
@@ -55,6 +55,7 @@
 
   @media (min-width: $screen-l) {
     max-width: 650px;
+    z-index: 1;
     width: calc(650px * 0.5);
     height: calc(100% + 190px);
     left: 0;
@@ -130,7 +131,7 @@
   align-items: center;
 
   @media (min-width: $screen-m) {
-    width: calc(100% - 200px);
+    width: calc(100% - 180px);
     bottom: 75px;
   }
 

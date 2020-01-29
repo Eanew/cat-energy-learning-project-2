@@ -1,13 +1,13 @@
 .intro__wrapper {
   @include wrapper;
   position: relative;
-  padding-top: 29px;
+  padding-top: 27px;
   padding-bottom: 2px;
   order: 5;
   height: 482px;
   background-image: url("../img/index-can-mobile@1x.png");
   background-size: 280px 271px;
-  background-position: bottom 43px center;
+  background-position: bottom 46px center;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
@@ -17,13 +17,13 @@
   }
 
   @media (min-width: $screen-m) {
-    height: 830px;
+    height: 860px;
     padding-left: 120px;
     padding-right: 120px;
     display: block;
     background-image: url("../img/index-can-tablet@1x.jpg");
     background-size: 709px 609px;
-    background-position: bottom 0 center;
+    background-position: bottom -10px center;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/index-can-tablet@2x.jpg");
@@ -54,18 +54,19 @@
 
   @media (min-width: $screen-m) {
     width: 420px;
+    margin-top: 24px;
     font-size: 60px;
     text-align: left;
     color: #111111;
   }
 
   @media (min-width: $screen-l) {
-    margin-top: 40px;
+    margin-top: 75px;
   }
 }
 
 .intro__text {
-  margin-top: 19px;
+  margin-top: 24px;
   font-size: 14px;
   line-height: 1;
   color: #ffffff;
@@ -73,7 +74,7 @@
   text-transform: uppercase;
 
   @media (min-width: $screen-m) {
-    margin-top: 35px;
+    margin-top: 42px;
     font-size: 20px;
     text-align: left;
     color: #111111;

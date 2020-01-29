@@ -1,11 +1,11 @@
 .page-header__wrapper {
   position: relative;
   order: 4;
-  padding-top: 11px;
+  padding-top: 8px;
   min-height: 65px;
 
   @media (min-width: $screen-m) {
-    padding-top: 40px;
+    padding-top: 22px;
     display: flex;
     align-items: center;
     padding-left: $padding-m;
@@ -16,6 +16,7 @@
     padding-left: $padding-l;
     padding-right: $padding-l;
     max-width: 1300px;
+    padding-top: 52px;
     margin-left: auto;
     margin-right: auto;
   }

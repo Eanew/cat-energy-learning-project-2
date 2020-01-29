@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 22px 0;
+  margin: 13px 0 13px;
 
   @media (min-width: $screen-m) {
     margin: 0;
@@ -11,9 +11,14 @@
 
 .copyright__text {
   font-family: $font-secondary;
+  padding-bottom: 3px;
   font-size: 16px;
   line-height: 1;
   color: #444444;
+
+  @media (min-width: $screen-m) {
+    margin-right: 15px;
+  }
 }
 
 .copyright:active .copyright__text {
@@ -21,8 +26,9 @@
 }
 
 .copyright__logo {
-  width: 27px;
-  height: 34px;
+  width: 40px;
+  height: auto;
+  margin-right: -6px;
   fill: #666666;
 }
 
