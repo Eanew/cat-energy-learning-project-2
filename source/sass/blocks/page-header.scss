@@ -35,6 +35,10 @@
     background-size: contain;
     background-position: center;
 
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/index-background-mobile@2x.jpg");
+    }
+
     @media (min-width: $screen-m) and (max-width: 1299px) {
       display: none;
     }
@@ -45,8 +49,13 @@
       width: 50vw;
       left: 50%;
       top: 0;
+      background-image: url("../img/index-background-desktop@1x.jpg");
       background-size: cover;
-      background-position: left 0 center;
+      background-position: left 25% center;
+
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url("../img/index-background-desktop@2x.jpg");
+      }
     }
   }
 }

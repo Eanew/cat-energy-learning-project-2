@@ -6,3 +6,15 @@
 .logo[href]:active {
   opacity: 0.6;
 }
+
+.logo__image {
+  @media (min-width: $screen-m) {
+    width: 174px;
+    height: 59px;
+  }
+
+  @media (min-width: $screen-l) {
+    width: 203px;
+    height: 60px;
+  }
+}
