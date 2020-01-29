@@ -50,6 +50,7 @@
     "node": "8.16"
   },
   "dependencies": {
+    "picturefill": "^3.0.3",
     "svg4everybody": "^2.1.9"
   }
 }
