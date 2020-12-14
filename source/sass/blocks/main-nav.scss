@@ -23,12 +23,16 @@
 .main-nav__item {
   display: flex;
   justify-content: center;
-  padding: 20px 0 9px;
+  padding: 24px 0 10px;
   border-top: 1px solid rgba(#111111, 0.1);
 
   @media (min-width: $screen-m) {
-    margin-left: 37px;
+    margin-left: 36px;
     border: none;
+  }
+
+  @media (min-width: $screen-l) {
+    margin-left: 34px;
   }
 }
 

@@ -4,13 +4,17 @@
   @media (min-width: $screen-m) {
     margin-bottom: 52px;
   }
+
+  @media (min-width: $screen-l) {
+    margin-bottom: 62px;
+  }
 }
 
 .program-selection__heading {
   @include wrapper;
-  margin-top: 0;
-  margin-bottom: 30px;
-  padding-top: 20px;
+  margin-top: 2px;
+  margin-bottom: 25px;
+  padding-top: 14px;
   font-size: 36px;
   line-height: 1.67;
   font-weight: 400;
@@ -19,9 +23,13 @@
   @media (min-width: $screen-m) {
     font-size: 60px;
     line-height: 1;
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin-top: 38px;
+    margin-bottom: 56px;
     border: none;
+  }
+
+  @media (min-width: $screen-l) {
+    margin-top: 55px;
   }
 }
 
@@ -30,7 +38,7 @@
   margin-bottom: 39px;
 
   @media (min-width: $screen-m) {
-    margin-bottom: 69px;
+    margin-bottom: 66px;
   }
 }
 

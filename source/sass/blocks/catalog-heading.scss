@@ -2,8 +2,8 @@
   @include wrapper;
   margin-top: 0;
   margin-bottom: 0;
-  padding-top: 21px;
-  padding-bottom: 36px;
+  padding-top: 15px;
+  padding-bottom: 29px;
   font-size: 36px;
   line-height: 1.67;
   font-weight: 400;
@@ -13,6 +13,11 @@
     border: none;
     font-size: 60px;
     line-height: 1;
-    margin-top: 25px;
+    margin-top: 37px;
+  }
+
+  @media (min-width: $screen-l) {
+    margin-top: 54px;
+    padding-bottom: 23px;
   }
 }

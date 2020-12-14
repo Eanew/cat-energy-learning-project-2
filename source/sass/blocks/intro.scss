@@ -1,13 +1,13 @@
 .intro__wrapper {
   @include wrapper;
   position: relative;
-  padding-top: 29px;
+  padding-top: 26px;
   padding-bottom: 2px;
   order: 5;
   height: 482px;
   background-image: url("../img/index-can-mobile@1x.png");
   background-size: 280px 271px;
-  background-position: bottom 43px center;
+  background-position: bottom 45px center;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
@@ -17,13 +17,13 @@
   }
 
   @media (min-width: $screen-m) {
-    height: 830px;
-    padding-left: 120px;
-    padding-right: 120px;
+    height: 833px;
+    padding-top: 52px;
+    padding-left: 117px;
     display: block;
     background-image: url("../img/index-can-tablet@1x.jpg");
     background-size: 709px 609px;
-    background-position: bottom 0 center;
+    background-position: bottom -30px center;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/index-can-tablet@2x.jpg");
@@ -31,10 +31,11 @@
   }
 
   @media (min-width: $screen-l) {
-    height: 620px;
+    height: 628px;
+    padding-left: 120px;
     background-image: url("../img/index-can-desktop@1x.png");
     background-size: 552px 499px;
-    background-position: top 20% left 64%;
+    background-position: top 18% left 65.5%;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/index-can-desktop@2x.png");
@@ -60,12 +61,12 @@
   }
 
   @media (min-width: $screen-l) {
-    margin-top: 40px;
+    margin-top: 51px;
   }
 }
 
 .intro__text {
-  margin-top: 19px;
+  margin-top: 25px;
   font-size: 14px;
   line-height: 1;
   color: #ffffff;
@@ -73,7 +74,7 @@
   text-transform: uppercase;
 
   @media (min-width: $screen-m) {
-    margin-top: 35px;
+    margin-top: 43px;
     font-size: 20px;
     text-align: left;
     color: #111111;
@@ -90,9 +91,15 @@
     display: inline-block;
     vertical-align: center;
     width: auto;
-    margin-top: 28px;
-    padding: 16px 26px;
+    margin-top: 27px;
+    margin-left: 2px;
+    padding: 16px 27px;
     font-size: 20px;
     line-height: 1;
+  }
+
+  @media (min-width: $screen-l) {
+    margin-top: 32px;
+    margin-left: 0;
   }
 }

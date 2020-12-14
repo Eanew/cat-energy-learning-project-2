@@ -1,11 +1,11 @@
 .page-header__wrapper {
   position: relative;
   order: 4;
-  padding-top: 11px;
+  padding-top: 13px;
   min-height: 65px;
 
   @media (min-width: $screen-m) {
-    padding-top: 40px;
+    padding-top: 17px;
     display: flex;
     align-items: center;
     padding-left: $padding-m;
@@ -13,6 +13,7 @@
   }
 
   @media (min-width: $screen-l) {
+    padding-top: 48px;
     padding-left: $padding-l;
     padding-right: $padding-l;
     max-width: 1300px;
@@ -46,7 +47,7 @@
       z-index: -1;
       height: 696px;
       width: 50vw;
-      left: 50%;
+      left: calc(50% - 1px);
       top: 0;
       background-image: url("../img/index-background-desktop@1x.jpg");
       background-size: cover;
@@ -63,6 +64,7 @@
   margin-left: $padding-s;
 
   @media (min-width: $screen-m) {
+    margin-top: 3px;
     margin-left: 0;
   }
 }

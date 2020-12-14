@@ -5,6 +5,12 @@
 
   @media (min-width: $screen-m) and (max-width: 1299px) {
     border-bottom: 1px solid rgba(#111111, 0.1);
+    margin-top: 28px;
+    padding-bottom: 53px;
+  }
+
+  @media (min-width: $screen-l) {
+    margin-top: 56px;
   }
 }
 
@@ -22,11 +28,16 @@
 
 .how-it-works__list {
   @include list-reset;
+  padding-top: 9px;
   display: flex;
   flex-wrap: wrap;
   align-items: top;
   justify-content: space-between;
   counter-reset: section;
+
+  @media (min-width: $screen-m) and (max-width: 1299px) {
+    margin-top: -20px;
+  }
 }
 
 .how-it-works__item {
@@ -35,7 +46,6 @@
   margin-top: 20px;
   min-height: 60px;
   padding-left: 80px;
-  padding-right: 6px;
 
   @media (max-width: 767px) {
     display: flex;
@@ -43,9 +53,9 @@
   }
 
   @media (min-width: $screen-m) {
-    max-width: 45%;
+    max-width: 45.8%;
     min-height: 233px;
-    margin-top: 90px;
+    margin-top: 84px;
     padding-left: 0;
     padding-right: 70px;
     padding-top: 110px;
@@ -55,7 +65,8 @@
       z-index: -1;
       counter-increment: section;
       content: counter(section);
-      left: 123px;
+      left: 55%;
+      transform: translateX(-50%);
       top: -39px;
       font-family: $font-primary;
       font-size: 281px;
@@ -66,8 +77,15 @@
   }
 
   @media (min-width: $screen-l) {
-    flex: 0 0 21%;
+    flex: 0 0 20.1%;
+    margin-top: 63px;
+    padding-top: 112px;
     padding-right: 0;
+
+    &::before {
+      left: 72%;
+      transform: translateX(-50%);
+    }
   }
 
   &::after {

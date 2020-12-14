@@ -9,14 +9,16 @@
   flex-direction: column;
 
   @media (min-width: $screen-m) {
-    padding-top: 58px;
-    padding-bottom: 58px;
+    padding-top: 54px;
+    padding-bottom: 56px;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
   }
 
   @media (min-width: $screen-l) {
+    padding-top: 58px;
+    padding-bottom: 55px;
   }
 }
 

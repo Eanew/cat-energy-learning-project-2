@@ -1,41 +1,47 @@
 .show-all {
-  padding: 0 20px 25px;
+  padding: 0 20px 17px;
   border-top: $border-ed;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   @media (min-width: $screen-m) {
-    margin-top: 140px;
+    margin-top: 139px;
     margin-left: 30px;
     margin-right: 30px;
-    padding: 0 38px 40px;
+    padding: 0 38px 0;
     border: $border-ed;
   }
 
   @media (min-width: $screen-l) {
+    margin-top: 143px;
     margin-left: 40px;
     margin-right: 40px;
   }
 }
 
 .show-all__link {
-  margin-top: 27px;
-  margin-bottom: 23px;
+  margin-top: 26px;
+  margin-bottom: 24px;
   font-size: 0;
-  width: 31px;
-  height: 31px;
+  width: 30px;
+  height: 30px;
   background-image: url("../img/icon-plus-mobile.svg");
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.2;
 
   @media (min-width: $screen-m) {
-    width: 61px;
-    height: 61px;
+    width: 60px;
+    height: 60px;
     margin-top: 55px;
-    margin-bottom: 50px;
+    margin-bottom: 49px;
     background-image: url("../img/icon-plus.svg");
+  }
+
+  @media (min-width: $screen-l) {
+    margin-top: 53px;
+    margin-bottom: 50px;
   }
 
   &:focus,
@@ -69,8 +75,7 @@
 }
 
 .show-all__text {
-  margin-top: 11px;
-  margin-bottom: 20px;
+  margin-top: 7px;
   font-family: $font-secondary;
   font-size: 12px;
   line-height: 1.33;
@@ -79,7 +84,7 @@
   @media (min-width: $screen-m) {
     font-size: 16px;
     line-height: 1.25;
-    margin-top: 28px;
+    margin-top: 24px;
     width: 170px;
     text-align: center;
   }
@@ -87,7 +92,7 @@
 
 .show-all__button {
   width: 100%;
-  margin-top: auto;
+  margin-top: 9px;
   padding: 10px 0;
   font-size: 16px;
   line-height: 1.25;
@@ -103,5 +108,9 @@
 
   &:active {
     color: rgba(68, 68, 68, 0.3);
+  }
+
+  @media (min-width: $screen-m) {
+    margin-top: 67px;
   }
 }

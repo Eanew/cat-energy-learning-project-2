@@ -7,12 +7,7 @@
   list-style: none;
   margin-top: 0;
   margin-bottom: 0;
-  padding-top: 20px;
-  padding-bottom: 20px;
-
-  @media (min-width: $screen-m) {
-    margin-bottom: 59px;
-  }
+  padding-bottom: 17px;
 
   @media (min-width: $screen-l) {
     display: flex;
@@ -22,17 +17,17 @@
 .diet__item {
   position: relative;
   margin-top: 20px;
-  padding: 30px 20px 22px;
+  padding: 30px 20px 20px;
   background-color: #f2f2f2;
 
   @media (min-width: $screen-m) {
-    padding: 80px 265px 62px 52px;
+    padding: 76px 275px 60px 53px;
     margin-top: 30px;
   }
 
   @media (min-width: $screen-l) {
     width: 46.73%;
-    padding-right: 56px;
+    padding-right: 30px;
   }
 
   &::before {
@@ -46,9 +41,9 @@
     background-color: $color-primary;
 
     @media (min-width: $screen-m) {
-      top: 91px;
+      top: 92px;
       left: auto;
-      right: 60px;
+      right: 62px;
       width: 200px;
       height: 200px;
     }
@@ -76,7 +71,7 @@
   @media (min-width: $screen-m) {
     top: 80px;
     left: auto;
-    right: 92px;
+    right: 91px;
     width: 141px;
     height: 194px;
   }
@@ -91,8 +86,13 @@
 }
 
 .diet__item--pro {
-  @media (min-width: $screen-m) {
-    padding-right: 297px;
+  @media (min-width: $screen-m) and (max-width: 1299px) {
+    padding-right: 312px;
+
+    &::before {
+      top: 91px;
+      right: 60px;
+    }
   }
 
   @media (min-width: $screen-l) {
@@ -144,23 +144,26 @@
   }
 
   @media (min-width: $screen-l) {
-    margin-left: 164px;
+    margin-left: 161px;
   }
 }
 
 .diet__description {
   @include paragraph;
-  padding-bottom: 24px;
-  margin: 35px 0 20px;
+  padding: 14px 0 21px;
+  margin: 15px 0 19px;
   border-bottom: 1px solid rgba(#111111, 0.1);
 
   @media (min-width: $screen-m) {
+    padding-top: 10px;
+    padding-bottom: 37px;
     padding-left: 0;
     border: none;
   }
 
   @media (min-width: $screen-l) {
-    margin: 75px 0 11px;
+    margin-top: 63px;
+    padding-bottom: 13px;
   }
 }
 
@@ -168,7 +171,7 @@
   position: relative;
   display: inline-block;
   vertical-align: center;
-  padding-right: 49px;
+  padding-right: 45px;
   font-size: 16px;
   line-height: 1;
   color: #111111;
@@ -184,8 +187,9 @@
     opacity: 0.3;
   }
 
-  @media (min-width: $screen-l) {
+  @media (min-width: $screen-m) {
     font-size: 20px;
+    padding-right: 56px;
   }
 
   &::after {

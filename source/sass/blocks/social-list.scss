@@ -20,12 +20,21 @@
 
   &:last-child {
     margin-right: 8px;
+
+    @media (min-width: $screen-m) {
+      margin-right: -19px;
+    }
   }
 }
 
 .social-list__item--instagram {
   margin-left: 36px;
   margin-right: 40px;
+
+  @media (min-width: $screen-m) {
+    margin-left: 29px;
+    margin-right: 28px;
+  }
 }
 
 .social-list__link {
@@ -42,5 +51,22 @@
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+@media (min-width: $screen-m) {
+  .social-list__icon-vk {
+    width: 30px;
+    height: 16px;
+  }
+
+  .social-list__icon-instagram {
+    width: 23px;
+    height: 23px;
+  }
+
+  .social-list__icon-fb {
+    width: 14px;
+    height: 28px;
   }
 }

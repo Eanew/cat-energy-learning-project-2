@@ -14,6 +14,15 @@
   font-size: 16px;
   line-height: 1;
   color: #444444;
+
+  @media (min-width: $screen-m) {
+    margin-bottom: 4px;
+    margin-right: 22px;
+  }
+
+  @media (min-width: $screen-l) {
+    margin-bottom: 0;
+  }
 }
 
 .copyright:active .copyright__text {
@@ -24,6 +33,7 @@
   width: 27px;
   height: 34px;
   fill: #666666;
+  transform: scale(1.5);
 }
 
 .copyright:focus .copyright__logo,

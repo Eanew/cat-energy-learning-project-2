@@ -1,6 +1,6 @@
 .contacts {
   width: 100%;
-  padding: 18px 20px;
+  padding: 11px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -13,7 +13,7 @@
   }
 
   @media (min-width: $screen-m) {
-    padding: 66px 71px 59px;
+    padding: 63px 71px 58px;
   }
 
   @media (min-width: $screen-l) {
@@ -22,7 +22,7 @@
     top: 95px;
     left: calc((100% - 1220px) / 2);
     width: 570px;
-    padding: 66px 90px 59px 76px;
+    padding: 62px 84px 59px 76px;
   }
 }
 
