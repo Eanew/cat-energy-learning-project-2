@@ -18,14 +18,13 @@
   margin-right: auto;
   padding-left: $padding-s;
   padding-right: $padding-s;
-  padding-top: 18px;
+  padding-top: 30px;
   font-size: 36px;
   line-height: 1.67;
   font-weight: 400;
 
   @media (min-width: $screen-m) {
     font-size: 60px;
-    margin-top: 32px;
     line-height: 1;
     padding-left: $padding-m;
     padding-right: $padding-m;
@@ -33,7 +32,6 @@
 
   @media (min-width: $screen-l) {
     width: 100%;
-    margin-top: 15px;
     margin-bottom: 66px;
     padding-left: calc((100% - 1220px) / 2);
   }
@@ -46,10 +44,9 @@
   padding-right: $padding-s;
 
   @media (min-width: $screen-m) {
-    padding-bottom: 251px;
+    padding-bottom: 255px;
     padding-left: $padding-m;
     padding-right: $padding-m;
-    margin-top: 40px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -65,14 +62,12 @@
     padding-top: 46px;
     padding-bottom: 0;
     margin-right: 0;
-    margin-top: 0;
   }
 }
 
 .example__legend {
   @include paragraph;
-  margin-top: 22px;
-  padding-right: 5px;
+  margin-top: 30px;
 
   @media (min-width: $screen-m) {
     width: 100%;
@@ -84,14 +79,13 @@
 }
 
 .example__table {
-  margin-top: 24px;
+  margin-top: 30px;
   width: 280px;
   margin-left: auto;
   margin-right: auto;
 
   @media (min-width: $screen-m) {
     width: 366px;
-    margin-top: 30px;
     margin-left: 0;
   }
 
@@ -169,7 +163,7 @@
 }
 
 .example__spending {
-  margin-top: 32px;
+  margin-top: 35px;
   font-size: 14px;
   line-height: 1.43;
   text-align: center;
@@ -178,7 +172,6 @@
   @media (min-width: $screen-m) {
     width: 180px;
     font-size: 20px;
-    margin-top: 46px;
     line-height: 1;
     text-align: right;
   }

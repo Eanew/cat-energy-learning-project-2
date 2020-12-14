@@ -1,5 +1,6 @@
 .cat-food {
   @include wrapper;
+  padding-top: 25px;
   padding-bottom: 25px;
   border-top: $border-ed;
   display: flex;

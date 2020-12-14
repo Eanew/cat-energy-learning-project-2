@@ -19,43 +19,13 @@
   align-items: center;
 
   &:last-child {
-    margin-right: 11px;
-
-    @media (min-width: $screen-m) {
-      margin-right: 4px;
-    }
+    margin-right: 8px;
   }
 }
 
 .social-list__item--instagram {
   margin-left: 36px;
   margin-right: 40px;
-
-  @media (min-width: $screen-m) {
-    margin-left: 30px;
-    margin-right: 30px;
-  }
-}
-
-.social-list__item--instagram svg {
-  @media (min-width: $screen-m) {
-    width: 24px;
-    height: auto;
-  }
-}
-
-.social-list__link--facebook svg {
-  @media (min-width: $screen-m) {
-    width: 14px;
-    height: auto;
-  }
-}
-
-.social-list__link--vk svg {
-  @media (min-width: $screen-m) {
-    width: 30px;
-    height: auto;
-  }
 }
 
 .social-list__link {
