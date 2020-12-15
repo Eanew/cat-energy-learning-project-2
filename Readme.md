@@ -1,24 +1,26 @@
 ﻿# Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
+* Студент: [Александр Петров](https://up.htmlacademy.ru/adaptive/18/user/345769).
+* Наставник: [Антон Игнатенко](https://htmlacademy.ru/profile/id987931).
+
 ## Описание
 
-Адаптивная, "резиновая" кроссбраузерная вёрстка из 3-х страниц без использования JavaScript (за исключением карты).
+Учебный проект. Адаптивная, "резиновая" кроссбраузерная вёрстка из 3-х страниц без использования JavaScript (за исключением карты) с ретинизацией изображений.
 
-Установка пакетов:
+<img width="769" alt="Preview" src="https://up.htmlacademy.ru/assets/intensives/adaptive/19/projects/cat-energy/preview.jpg">
+
+---
+
+### Установка пакетов:
 
 ```
 npm install
 ```
-Сборка и запуск:
+### Сборка и запуск:
 
 ```
 npm start
 ```
-
----
-
-* Студент: [Александр Петров](https://up.htmlacademy.ru/adaptive/18/user/345769).
-* Наставник: [Антон Игнатенко](https://htmlacademy.ru/profile/id987931).
 
 ---
 
