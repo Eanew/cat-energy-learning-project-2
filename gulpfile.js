@@ -1,12 +1,12 @@
 "use strict";
 
-var gulp = require("gulp");
-var plumber = require("gulp-plumber");
-var sourcemap = require("gulp-sourcemaps");
-var sass = require("gulp-sass");
-var postcss = require("gulp-postcss");
-var autoprefixer = require("autoprefixer");
-var server = require("browser-sync").create();
+const gulp = require("gulp");
+const plumber = require("gulp-plumber");
+const sourcemap = require("gulp-sourcemaps");
+const sass = require("gulp-sass");
+const postcss = require("gulp-postcss");
+const autoprefixer = require("autoprefixer");
+const server = require("browser-sync").create();
 const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const sprite = require("gulp-svg-sprite");
