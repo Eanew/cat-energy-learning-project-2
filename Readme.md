@@ -9,21 +9,6 @@
 
 [![Обзор проекта «Кэт энерджи» - YouTube](./preview.png)](https://www.youtube.com/watch?v=1Jr2JZSRj84 "Обзор проекта «Кэт энерджи» - YouTube")
 
-[<img width="769" alt="Preview" src="./preview.png">](https://www.youtube.com/watch?v=1Jr2JZSRj84 "Обзор проекта «Кэт энерджи» - YouTube")
-
----
-
-### Установка пакетов:
-
-```
-npm install
-```
-### Сборка и запуск:
-
-```
-npm start
-```
-
 ---
 
 ### Используемые подходы и технологии:
@@ -37,6 +22,19 @@ npm start
 * Ретинизация и оптимизация изображений
 * SVG - спрайты
 * Pixel Perfect
+
+---
+
+### Установка пакетов:
+
+```
+npm install
+```
+### Сборка и запуск:
+
+```
+npm start
+```
 
 ---
 
