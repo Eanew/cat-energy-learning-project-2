@@ -7,7 +7,9 @@
 
 Учебный проект. Адаптивная, отзывчивая кроссбраузерная вёрстка из 3-х страниц без использования JavaScript (за исключением карты) с ретинизацией изображений.
 
-<img width="769" alt="Preview" src="https://up.htmlacademy.ru/assets/intensives/adaptive/19/projects/cat-energy/preview.jpg">
+[![Обзор проекта «Кэт энерджи» - YouTube](./preview.png)](https://www.youtube.com/watch?v=1Jr2JZSRj84 "Обзор проекта «Кэт энерджи» - YouTube")
+
+[<img width="769" alt="Preview" src="./preview.png">](https://www.youtube.com/watch?v=1Jr2JZSRj84 "Обзор проекта «Кэт энерджи» - YouTube")
 
 ---
 
@@ -29,11 +31,11 @@ npm start
 * Методология БЭМ
 * Препроцессор Sass
 * Gulp
+* Адаптивная и отзывчивая вёрстка
+* Кроссбраузерность
+* Семантическая разметка, доступность
 * Ретинизация и оптимизация изображений
 * SVG - спрайты
-* Адаптивная и отзывчивая вёрстка
-* Семантическая разметка, доступность
-* Кроссбраузерность
 * Pixel Perfect
 
 ---
