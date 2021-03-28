@@ -2,7 +2,7 @@
   "name": "cat-energy-18",
   "version": "17.0.0",
   "private": true,
-  "main": "build/index.html",
+  "main": "index.html",
   "description": "Личный проект «Кэт энерджи» от HTML Academy",
   "devDependencies": {
     "@babel/core": "7.5.5",
